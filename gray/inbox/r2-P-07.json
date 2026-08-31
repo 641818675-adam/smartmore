@@ -1,0 +1,21 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-30T08:18:00.000Z",
+  "rating": 4,
+  "categories": [
+    "界面"
+  ],
+  "message": "打分的时候分不清点没点上",
+  "app_version": "10.1.0-rc2",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1080,
+  "screen_height": 2400,
+  "dark_mode": true,
+  "simulated": true,
+  "panelist": "P-07",
+  "finding_ids": [
+    "R2-04"
+  ],
+  "evidence": "R2-04: app.js feedbackModal 五颗星统一用 ICONS.starOn（实心填充），仅靠灰色区分未选中，违反设计规范 §3.4「状态靠形状与颜色双重编码」。"
+}

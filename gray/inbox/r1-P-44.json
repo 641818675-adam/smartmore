@@ -1,0 +1,22 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-31T21:15:00.000Z",
+  "rating": 3,
+  "categories": [
+    "界面",
+    "客户"
+  ],
+  "message": "外屏上看客户地址被按钮挤得只剩半行",
+  "app_version": "10.1.0-rc1",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1080,
+  "screen_height": 2400,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-44",
+  "finding_ids": [
+    "R1-02"
+  ],
+  "evidence": "R1-02: web/css/app.css .cust-actions 为竖排（3×62px 宽按钮占满右侧），卡片信息区被压到约 180px；331dp 外屏上地址行截断加剧。设计规范 §2.3 要求窄屏优先。"
+}

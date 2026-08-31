@@ -1,0 +1,19 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-31T03:37:00.000Z",
+  "rating": 5,
+  "categories": [
+    "选型"
+  ],
+  "message": "套包复制清单很省事",
+  "app_version": "10.1.0-rc1",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1768,
+  "screen_height": 2400,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-26",
+  "finding_ids": [],
+  "evidence": "无问题命中，仅基线体验打分"
+}

@@ -1,0 +1,23 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-31T02:36:00.000Z",
+  "rating": 2,
+  "categories": [
+    "界面",
+    "客户"
+  ],
+  "message": "看完型号按返回键，应用直接闪退回桌面了；打分的时候分不清点没点上",
+  "app_version": "10.1.0-rc2",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 832,
+  "screen_height": 2268,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-25",
+  "finding_ids": [
+    "R2-01",
+    "R2-04"
+  ],
+  "evidence": "R2-01: MainActivity.onBackPressed() 只在 webView.canGoBack() 为真时回退（单页应用无历史，永远为假），其余情况直接 super.onBackPressed() 退出应用；JS 侧 openSheet/openModal 未向原生层上报层叠状态。Android 返回键应逐层退出：弹层 → 详情 → 应用。 | R2-04: app.js feedbackModal 五颗星统一用 ICONS.starOn（实心填充），仅靠灰色区分未选中，违反设计规范 §3.4「状态靠形状与颜色双重编码」。"
+}

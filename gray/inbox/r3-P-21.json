@@ -1,0 +1,21 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-30T22:32:00.000Z",
+  "rating": 3,
+  "categories": [
+    "客户"
+  ],
+  "message": "打完客户名习惯性按完成，结果没存上",
+  "app_version": "10.1.0-rc3",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1080,
+  "screen_height": 2400,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-21",
+  "finding_ids": [
+    "R3-03"
+  ],
+  "evidence": "R3-03: 客户页两个 input 无 Enter 提交链路，Android 输入法右下角『完成』按键按下后无动作，必须手动点保存按钮；桌面版表单回车即提交（QLineEdit 无此交互但桌面有按钮在焦点内）。"
+}

@@ -1,0 +1,19 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-31T00:34:00.000Z",
+  "rating": 5,
+  "categories": [
+    "客户"
+  ],
+  "message": "复制清单自动带客户名很实用",
+  "app_version": "10.1.0-rc1",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1600,
+  "screen_height": 2400,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-23",
+  "finding_ids": [],
+  "evidence": "无问题命中，仅基线体验打分"
+}

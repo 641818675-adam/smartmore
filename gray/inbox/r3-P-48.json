@@ -1,0 +1,22 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-09-01T01:19:00.000Z",
+  "rating": 3,
+  "categories": [
+    "搜索",
+    "性能"
+  ],
+  "message": "看一遍配件库存要点二十下加载更多，手酸",
+  "app_version": "10.1.0-rc3",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1080,
+  "screen_height": 2400,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-48",
+  "finding_ids": [
+    "R3-02"
+  ],
+  "evidence": "R3-02: app.js data-more 处理器固定 state.shown += PAGE_SIZE(30)；R1-03 将上限从 300 提到 600 后，触顶所需点击次数从约 10 次涨到约 20 次，效率回退。"
+}

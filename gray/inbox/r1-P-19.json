@@ -1,0 +1,23 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-30T20:30:00.000Z",
+  "rating": 3,
+  "categories": [
+    "界面",
+    "客户"
+  ],
+  "message": "外屏上看客户地址被按钮挤得只剩半行；深色模式下选中的筛选块底下那圈蓝光发灰",
+  "app_version": "10.1.0-rc1",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1768,
+  "screen_height": 2400,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-19",
+  "finding_ids": [
+    "R1-02",
+    "R1-04"
+  ],
+  "evidence": "R1-02: web/css/app.css .cust-actions 为竖排（3×62px 宽按钮占满右侧），卡片信息区被压到约 180px；331dp 外屏上地址行截断加剧。设计规范 §2.3 要求窄屏优先。 | R1-04: web/css/app.css .chip.on 硬编码 rgba(43,92,240,.32)（亮色 accent #2b5cf0 的投影）；暗色 accent 是 #7a9bff，投影色阶不匹配。违反设计规范 §2.1「禁止令牌外取色」。"
+}

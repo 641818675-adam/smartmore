@@ -1,0 +1,23 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-31T00:34:00.000Z",
+  "rating": 3,
+  "categories": [
+    "客户",
+    "界面"
+  ],
+  "message": "删了客户以后复制清单突然不带客户名了，我还以为坏了；打完客户名习惯性按完成，结果没存上",
+  "app_version": "10.1.0-rc3",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1600,
+  "screen_height": 2400,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-23",
+  "finding_ids": [
+    "R3-01",
+    "R3-03"
+  ],
+  "evidence": "R3-01: customer.js remove() 会静默取消该客户的选中态（remove 内部 setSelected(null)），data-modal-ok 的 toast 固定为『客户已删除』；详情页报价客户胶囊随之消失且无解释。 | R3-03: 客户页两个 input 无 Enter 提交链路，Android 输入法右下角『完成』按键按下后无动作，必须手动点保存按钮；桌面版表单回车即提交（QLineEdit 无此交互但桌面有按钮在焦点内）。"
+}

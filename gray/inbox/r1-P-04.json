@@ -1,0 +1,25 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-30T05:15:00.000Z",
+  "rating": 3,
+  "categories": [
+    "界面",
+    "客户",
+    "搜索",
+    "性能"
+  ],
+  "message": "外屏上看客户地址被按钮挤得只剩半行；想翻一遍配件库存，翻到 300 条就断了，也不知道去哪看剩下的",
+  "app_version": "10.1.0-rc1",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1080,
+  "screen_height": 2400,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-04",
+  "finding_ids": [
+    "R1-02",
+    "R1-03"
+  ],
+  "evidence": "R1-02: web/css/app.css .cust-actions 为竖排（3×62px 宽按钮占满右侧），卡片信息区被压到约 180px；331dp 外屏上地址行截断加剧。设计规范 §2.3 要求窄屏优先。 | R1-03: web/js/app.js runSearch() 检索上限传 300；全库 1213 条。用户按 30 次「加载更多」到 300 条后按钮消失，meta 文案没有解释为何看不全（列表页已写「列出前 300 条」但无后续指引）。"
+}

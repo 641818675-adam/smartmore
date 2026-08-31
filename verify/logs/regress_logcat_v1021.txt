@@ -1,0 +1,358 @@
+--------- beginning of main
+08-30 11:09:05.433  3129  3129 I logcat  : type=1400 audit(0.0:3966): avc: denied { write } for name="logd" dev="tmpfs" ino=11915 scontext=u:r:adbd:s0 tcontext=u:object_r:logd_socket:s0 tclass=sock_file permissive=1
+08-30 11:09:05.593  3133  3133 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 11:09:05.589  3133  3133 I cmd     : type=1400 audit(0.0:3967): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:adbd:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+--------- beginning of system
+08-30 11:09:05.599  1310  3083 I ActivityManager: Force stopping com.smartmore.partfinder appid=10053 user=0: from pid 3133
+08-30 11:09:05.589  3133  3133 I cmd     : type=1400 audit(0.0:3968): avc: denied { call } for scontext=u:r:adbd:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+08-30 11:09:05.589  1056  1056 I servicemanager: type=1400 audit(0.0:3969): avc: denied { transfer } for scontext=u:r:init:s0 tcontext=u:r:adbd:s0 tclass=binder permissive=1
+08-30 11:09:05.589  3133  3133 I cmd     : type=1400 audit(0.0:3970): avc: denied { call } for scontext=u:r:adbd:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+08-30 11:09:05.589  3133  3133 I cmd     : type=1400 audit(0.0:3971): avc: denied { transfer } for scontext=u:r:adbd:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+08-30 11:09:05.626  2344  2344 D CarrierSvcBindHelper: No carrier app for: 0
+08-30 11:09:05.596  1055  1055 I lmkd    : type=1400 audit(0.0:3972): avc: denied { write } for name="oom_score_adj" dev="proc" ino=20397 scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=file permissive=1
+08-30 11:09:05.747  3138  3138 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 11:09:05.750  1310  3083 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.smartmore.partfinder/.MainActivity} from uid 2000, pid 3138
+08-30 11:09:05.756  1310  3083 I ActivityTaskManager: [KeepAlive] disabled for com.smartmore.partfinder
+08-30 11:09:05.756  1310  3083 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=109 attached=false
+08-30 11:09:05.756  1310  1310 I android.anim: type=1400 audit(0.0:3973): avc: denied { read } for scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+08-30 11:09:05.764  1310  3083 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10053; state: DISABLED
+08-30 11:09:05.764  1310  3083 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10053; state: DISABLED
+08-30 11:09:05.764  1310  3083 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10053; state: DISABLED
+08-30 11:09:05.764  1310  3083 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10053; state: DISABLED
+08-30 11:09:05.764  1310  3083 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10053; state: DISABLED
+08-30 11:09:05.766  1310  3083 D CompatibilityChangeReporter: Compat change id reported: 197654537; UID 10053; state: ENABLED
+08-30 11:09:05.772  1494  1660 W StartingSurfaceDrawer: Window background is transparent, fill background with black color
+08-30 11:09:05.789  2018  2018 W WidgetOperateReceiver: onReceive: intent = Intent { act=com.mumu.LAUNCHER_LIFECYCLE flg=0x10 pkg=com.mumu.store cmp=com.mumu.store/.widget.receiver.WidgetOperateReceiver (has extras) } action = com.mumu.LAUNCHER_LIFECYCLE
+08-30 11:09:05.789  2018  2018 W WidgetOperateReceiver: onLauncherLifecycle: launcherLifecycle = ON_PAUSE
+08-30 11:09:05.791  2018  2018 W WidgetManager: updateLauncherLifecycle: launcherLifecycleName = ON_PAUSE
+08-30 11:09:05.801  1310  1330 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10053; state: DISABLED
+08-30 11:09:05.802  1310  1330 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10053; state: DISABLED
+08-30 11:09:05.802  1310  1330 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10053; state: DISABLED
+08-30 11:09:05.802  1310  1330 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10053; state: ENABLED
+08-30 11:09:05.802  1310  1340 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10053; state: ENABLED
+08-30 11:09:05.803  1494  1698 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 33181696
+08-30 11:09:05.819  1139  1139 D Zygote  : Forked child process 3142
+08-30 11:09:05.819  1494  3141 D ndroid.systemu: Features: 0 0 0
+08-30 11:09:05.819  1494  3141 E ndroid.systemu: vulkan version is 4211029
+08-30 11:09:05.821  1494  3141 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 33181696
+08-30 11:09:05.821  1310  1340 I ActivityManager: Start proc 3142:com.smartmore.partfinder/u0a53 for pre-top-activity {com.smartmore.partfinder/com.smartmore.partfinder.MainActivity}
+08-30 11:09:05.822  3142  3142 I Zygote  : fakeProductInfoIfNeed callded! com.smartmore.partfinder
+08-30 11:09:05.824  1494  3141 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 33181696
+08-30 11:09:05.824  3142  3142 I Zygote  : fake Product info com.smartmore.partfinder not matched any pattern
+08-30 11:09:05.825  3142  3142 I Zygote  : fakeProductInfoFromProperties callded! com.smartmore.partfinder
+08-30 11:09:05.829  3142  3142 E NemuAppNameUtil: save data success
+08-30 11:09:05.833  3142  3142 I Zygote  : seccomp disabled by setenforce 0
+08-30 11:09:05.841  3142  3142 W more.partfinde: Unexpected CPU variant for X86 using defaults: x86_64
+08-30 11:09:05.850  3142  3142 E more.partfinde: Not starting debugger since process cannot load the jdwp agent.
+08-30 11:09:05.855  3142  3142 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 11:09:05.869  1310  1949 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
+08-30 11:09:05.877  1310  1949 D RecentTaskMonitor: onTaskFocusChanged [FALSE] 2
+08-30 11:09:05.877  1310  1949 D RecentTaskMonitor: onTaskFocusChanged [TRUE] 109 ignoreTFC false
+08-30 11:09:05.877  3142  3155 E ashmem  : memfd: ro.vndk.version not defined or invalid (), this is mandated since P.
+08-30 11:09:05.879  3142  3142 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10053; state: ENABLED
+08-30 11:09:05.884  1310  1330 D RecentTaskMonitor: task null or not sub display in notifyDisplayOpened
+08-30 11:09:05.884  1310  1330 D RecentTaskMonitor: VAddressShellNotifier#notifyOpenTab :{"uri":"player\/tab","need_response":false,"params":{"id":"task:109","displayId":0,"userId":0,"name":"PartFinder","originName":"PartFinder","packageName":"com.smartmore.partfinder","launcher":false,"newTask":true,"icon":"iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAAACMSURBVEiJ7ZaxDQJRDEOf4VcIUdDBBqwCM7DBTUdDQ8ksDIBojjtiGvqj+ClA3wP4yUksRZvjbafZ6wJsqSjDA3woVn\/FrGuaf7Q0nItiyDAHQLAojjHLH4B8AG4JJgD5CdKvKHtExJAL+IOi\/f6SW9GmAK1o3wDuEqsMc5tnGSP2c8VJlT8LS32Y7g3ONlCC3DgkWQAAAABJRU5ErkJggg==","canChangeAppOrientation":false,"canReceiveFile":false,"pid":3142,"uid":10053,"action":"open"}}
+08-30 11:09:05.886  1072  1086 D nemuinit: start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 71
+08-30 11:09:05.887  1072  3158 D nemuinit: Proxy: use callback: 1310, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+08-30 11:09:05.887  1072  3158 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:05.888  1072  3158 D nemuinit: Proxy: use callback: 1494, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+08-30 11:09:05.888  1072  3158 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:05.889  1072  3158 D nemuinit: Proxy: use callback: 2018, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+08-30 11:09:05.889  1072  3158 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:05.891  1072  3158 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+08-30 11:09:05.891  1072  3158 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 11:09:05.900  3142  3142 D NemuJavaHotPatchHelper: onHandleBindApplication reportedPackageName:com.smartmore.partfinder isMatchJavaPatch:false
+08-30 11:09:05.988  3142  3142 I Typeface: Preloading /system/fonts/Roboto-Regular.ttf
+08-30 11:09:06.041  3142  3142 V GraphicsEnvironment: ANGLE Developer option for 'com.smartmore.partfinder' set to: 'default'
+08-30 11:09:06.042  3142  3142 V GraphicsEnvironment: ANGLE GameManagerService for com.smartmore.partfinder: false
+08-30 11:09:06.042  3142  3142 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+08-30 11:09:06.044  3142  3142 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+08-30 11:09:06.044  3142  3142 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+08-30 11:09:06.064  3142  3162 D libEGL  : loaded /system/lib64/egl/libEGL_emulation.so
+08-30 11:09:06.077  1072  1086 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, id: 72
+08-30 11:09:06.077  1072  1086 D nemuinit: start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 73
+08-30 11:09:06.078  1072  3163 D nemuinit: Proxy: use callback: 1310, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.078  1072  3163 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.078  1072  3164 D nemuinit: Proxy: use callback: 1310, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+08-30 11:09:06.078  1072  3164 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.078  1072  3163 D nemuinit: Proxy: use callback: 1494, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.078  1072  3163 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.078  1072  3163 D nemuinit: Proxy: use callback: 2018, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.078  1072  3163 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.079  1072  1086 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, id: 74
+08-30 11:09:06.079  1072  3164 D nemuinit: Proxy: use callback: 1494, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+08-30 11:09:06.079  1072  3164 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.079  1072  3164 D nemuinit: Proxy: use callback: 2018, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+08-30 11:09:06.079  1072  3164 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.080  1072  3163 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: {"errcode":0,"message":"OK"}
+08-30 11:09:06.080  1072  3163 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 11:09:06.081  1072  3164 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+08-30 11:09:06.081  1072  3164 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 11:09:06.081  1072  1086 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, id: 75
+08-30 11:09:06.081  1072  3165 D nemuinit: Proxy: use callback: 1310, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.081  1072  3165 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.082  1072  1086 D nemuinit: start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 76
+08-30 11:09:06.082  1072  3165 D nemuinit: Proxy: use callback: 1494, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.082  1072  3165 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.082  1072  3165 D nemuinit: Proxy: use callback: 2018, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.082  1072  3165 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.082  1072  3166 D nemuinit: Proxy: use callback: 1310, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.082  1072  3166 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.082  1072  3166 D nemuinit: Proxy: use callback: 1494, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.082  1072  3166 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.082  1072  3166 D nemuinit: Proxy: use callback: 2018, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.082  1072  3166 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.083  1072  3167 D nemuinit: Proxy: use callback: 1310, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+08-30 11:09:06.083  1072  3167 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.083  1072  1086 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, id: 77
+08-30 11:09:06.083  1072  3166 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: {"errcode":0,"message":"OK"}
+08-30 11:09:06.083  1072  3166 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 11:09:06.083  1072  1086 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, id: 78
+08-30 11:09:06.084  1072  3167 D nemuinit: Proxy: use callback: 1494, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+08-30 11:09:06.084  1072  3167 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.084  1072  3167 D nemuinit: Proxy: use callback: 2018, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+08-30 11:09:06.084  1072  1086 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, id: 79
+08-30 11:09:06.084  1072  3167 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.084  1072  1086 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, id: 80
+08-30 11:09:06.084  1072  1086 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, id: 81
+08-30 11:09:06.084  1072  3165 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: {"errcode":0,"message":"OK"}
+08-30 11:09:06.084  1072  3165 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 11:09:06.085  1072  3169 D nemuinit: Proxy: use callback: 1310, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: 
+08-30 11:09:06.085  1072  3167 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+08-30 11:09:06.085  1072  3169 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.085  1072  3167 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 11:09:06.085  1072  3171 D nemuinit: Proxy: use callback: 1310, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: 
+08-30 11:09:06.085  1072  3171 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.085  1072  3171 D nemuinit: Proxy: use callback: 1494, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: 
+08-30 11:09:06.085  1072  3171 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.085  1072  3169 D nemuinit: Proxy: use callback: 1494, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: 
+08-30 11:09:06.085  1072  3169 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.086  1072  3172 D nemuinit: Proxy: use callback: 1310, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.086  1072  3169 D nemuinit: Proxy: use callback: 2018, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: 
+08-30 11:09:06.086  1072  3172 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.086  1072  3169 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.086  1072  3170 D nemuinit: Proxy: use callback: 1310, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.086  1072  3170 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.086  1072  3168 D nemuinit: Proxy: use callback: 1310, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.086  1072  3168 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.086  1072  3172 D nemuinit: Proxy: use callback: 1494, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.086  1072  3172 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.086  1072  3170 D nemuinit: Proxy: use callback: 1494, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.086  1072  3170 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.087  1072  3168 D nemuinit: Proxy: use callback: 1494, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.087  1072  3168 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.087  1072  3172 D nemuinit: Proxy: use callback: 2018, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.087  1072  3172 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.087  1072  3170 D nemuinit: Proxy: use callback: 2018, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.087  1072  3170 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.087  1072  3168 D nemuinit: Proxy: use callback: 2018, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: 
+08-30 11:09:06.087  1072  3168 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.088  1072  3171 D nemuinit: Proxy: use callback: 2018, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: 
+08-30 11:09:06.088  1072  3171 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 11:09:06.088  1072  3169 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: {"errcode":0,"message":"OK"}
+08-30 11:09:06.088  1072  3169 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 11:09:06.088  1072  3168 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: {"errcode":0,"message":"OK"}
+08-30 11:09:06.088  1072  3168 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 11:09:06.088  1072  3170 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: {"errcode":0,"message":"OK"}
+08-30 11:09:06.088  1072  3170 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 11:09:06.089  1072  3172 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":3142,"uid":10053}}, res: {"errcode":0,"message":"OK"}
+08-30 11:09:06.089  1072  3172 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 11:09:06.090  1072  3171 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: {"errcode":0,"message":"OK"}
+08-30 11:09:06.090  1072  3171 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 11:09:06.096  3142  3162 D more.partfinde: Features: 0 0 0
+08-30 11:09:06.096  3142  3162 E more.partfinde: vulkan version is 4211029
+08-30 11:09:06.099  3142  3142 I WebViewFactory: Loading com.android.webview version 110.0.5481.154.1 (code 548115537)
+08-30 11:09:06.100  3142  3162 D libEGL  : loaded /system/lib64/egl/libGLESv1_CM_emulation.so
+08-30 11:09:06.109  3142  3162 D libEGL  : loaded /system/lib64/egl/libGLESv2_emulation.so
+08-30 11:09:06.109  3142  3142 W more.partfinde: Entry not found
+08-30 11:09:06.118  3142  3142 E WebViewLibraryLoader: can't load with relro file; address space not reserved
+08-30 11:09:06.130  3142  3162 E GraphicsEnv: Failed to get gpu service
+08-30 11:09:06.200  3142  3142 I cr_WVCFactoryProvider: Loaded version=110.0.5481.154 minSdkVersion=29 isBundle=false multiprocess=true packageId=2
+08-30 11:09:06.287  3142  3142 V WebViewChromiumAwInit: Binding Chromium to main looper Looper (main, tid 2) {bec75a8}
+08-30 11:09:06.294  3142  3142 I cr_LibraryLoader: Successfully loaded native library
+08-30 11:09:06.295  3142  3142 I cr_CachingUmaRecorder: Flushed 9 samples from 9 histograms.
+08-30 11:09:06.314  3142  3177 D cr_ChildProcLH: [ChildProcessLauncherHelperImpl.java:584] Create a new ChildConnectionAllocator with package name = com.android.webview, sandboxed = true
+08-30 11:09:06.319  3142  3142 D cr_BrowserStartup: [BrowserStartupControllerImpl.java:437] Initializing chromium process, singleProcess=false
+08-30 11:09:06.331  1310  3083 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10053; state: DISABLED
+08-30 11:09:06.331  1310  1340 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10053; state: ENABLED
+08-30 11:09:06.336  1715  1715 D Zygote  : Forked child process 3178
+08-30 11:09:06.337  3178  3178 I Zygote  : fakeProductInfoIfNeed callded! com.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+08-30 11:09:06.337  1310  1340 I ActivityManager: Start proc 3178:com.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i3 for  {com.smartmore.partfinder/org.chromium.content.app.SandboxedProcessService0:0}
+08-30 11:09:06.338  3178  3178 I Zygote  : fake Product info com.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0 not matched any pattern
+08-30 11:09:06.338  3178  3178 I Zygote  : fakeProductInfoFromProperties callded! com.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+08-30 11:09:06.338  3178  3178 I Zygote  : fakeProductInfoFromProperties disable for uid ! com.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+08-30 11:09:06.342  3178  3178 E NemuAppNameUtil: save data to file error
+08-30 11:09:06.342  3178  3178 E NemuAppNameUtil: save data fail, try save again!!
+08-30 11:09:06.343  3178  3178 I Zygote  : seccomp disabled by setenforce 0
+08-30 11:09:06.348  3178  3178 W ocessService0:: Unexpected CPU variant for X86 using defaults: x86_64
+08-30 11:09:06.350  3178  3178 E ocessService0:: Not starting debugger since process cannot load the jdwp agent.
+08-30 11:09:06.354  3178  3178 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 11:09:06.364  3178  3190 E ashmem  : memfd: ro.vndk.version not defined or invalid (), this is mandated since P.
+08-30 11:09:06.367  3178  3178 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 99003; state: ENABLED
+08-30 11:09:06.384  3178  3178 D NemuJavaHotPatchHelper: onHandleBindApplication reportedPackageName:com.smartmore.partfinder isMatchJavaPatch:false
+08-30 11:09:06.385  3178  3178 I Typeface: Preloading /system/fonts/Roboto-Regular.ttf
+08-30 11:09:06.399  3142  3142 V cr_A11yState: [AccessibilityState.java:297] Enabled accessibility services: [app.lawnchair/.LawnchairAccessibilityService]
+08-30 11:09:06.399  3142  3142 V cr_A11yState: [AccessibilityState.java:298] Running accessibility services: []
+08-30 11:09:06.400  3142  3142 V cr_A11yState: [AccessibilityState.java:299] Will check again after 250 milliseconds.
+08-30 11:09:06.406  3142  3193 W chromium: [WARNING:dns_config_service_android.cc(115)] Failed to read DnsConfig.
+08-30 11:09:06.411  3178  3178 I LoadedApk: No resource references to update in package com.android.trichromelibrary
+08-30 11:09:06.411  3178  3178 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+08-30 11:09:06.411  3178  3178 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+08-30 11:09:06.413  3178  3178 I cr_WebViewApkApp: Launched version=110.0.5481.154 minSdkVersion=29 isBundle=false processName=com.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+08-30 11:09:06.416  3178  3178 I cr_ChildProcessService: Creating new ChildProcessService pid=3178
+08-30 11:09:06.421  3178  3178 E WebViewLibraryLoader: can't load with relro file; address space not reserved
+08-30 11:09:06.468  3142  3194 E chromium: [ERROR:simple_backend_impl.cc(79)] Failed to create directory: /data/user/0/com.smartmore.partfinder/cache/WebView/Default/HTTP Cache/Code Cache/js
+08-30 11:09:06.469  3142  3195 E chromium: [ERROR:simple_backend_impl.cc(79)] Failed to create directory: /data/user/0/com.smartmore.partfinder/cache/WebView/Default/HTTP Cache/Code Cache/wasm
+08-30 11:09:06.469  3142  3194 E chromium: [ERROR:simple_backend_impl.cc(79)] Failed to create directory: /data/user/0/com.smartmore.partfinder/cache/WebView/Default/HTTP Cache/Code Cache/js
+08-30 11:09:06.469  3142  3194 E chromium: [ERROR:simple_backend_impl.cc(738)] Simple Cache Backend: wrong file structure on disk: 1 path: /data/user/0/com.smartmore.partfinder/cache/WebView/Default/HTTP Cache/Code Cache/js
+08-30 11:09:06.469  3142  3195 E chromium: [ERROR:simple_backend_impl.cc(79)] Failed to create directory: /data/user/0/com.smartmore.partfinder/cache/WebView/Default/HTTP Cache/Code Cache/wasm
+08-30 11:09:06.469  3142  3195 E chromium: [ERROR:simple_backend_impl.cc(738)] Simple Cache Backend: wrong file structure on disk: 1 path: /data/user/0/com.smartmore.partfinder/cache/WebView/Default/HTTP Cache/Code Cache/wasm
+08-30 11:09:06.469  3142  3206 E chromium: [ERROR:disk_cache.cc(205)] Unable to create cache
+08-30 11:09:06.469  3142  3206 E chromium: [ERROR:disk_cache.cc(205)] Unable to create cache
+08-30 11:09:06.476  2617  3208 W cr_MetricsBridgeService: retained records has reached the max capacity, dropping record
+08-30 11:09:06.479  2617  3210 W cr_MetricsBridgeService: retained records has reached the max capacity, dropping record
+08-30 11:09:06.494  3142  3142 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10053; state: ENABLED
+08-30 11:09:06.564  3142  3199 W cr_media: BLUETOOTH_CONNECT permission is missing.
+08-30 11:09:06.567  3142  3199 W cr_media: registerBluetoothIntentsIfNeeded: Requires BLUETOOTH permission
+08-30 11:09:06.567  3142  3214 D more.partfinde: Features: 0 0 0
+08-30 11:09:06.567  3142  3214 E more.partfinde: vulkan version is 4211029
+08-30 11:09:06.570  3142  3214 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 11:09:06.573  3142  3214 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.configstore@1.0::ISurfaceFlingerConfigs instance: default
+08-30 11:09:06.583  3142  3177 D cr_ChildProcLH: [ChildProcessLauncherHelperImpl.java:287] Connection likely not created from app zygote
+08-30 11:09:06.583  3142  3177 D cr_ChildProcLauncher: [ChildProcessLauncher.java:250] on connect callback, pid=3178
+08-30 11:09:06.592  3178  3201 I cr_LibraryLoader: Successfully loaded native library
+08-30 11:09:06.593  3178  3201 I cr_CachingUmaRecorder: Flushed 3 samples from 3 histograms.
+08-30 11:09:06.599  2617  3208 W cr_MetricsBridgeService: retained records has reached the max capacity, dropping record
+08-30 11:09:06.599  2617  3209 W cr_MetricsBridgeService: retained records has reached the max capacity, dropping record
+08-30 11:09:06.599  2617  3209 W cr_MetricsBridgeService: retained records has reached the max capacity, dropping record
+08-30 11:09:06.603  3178  3201 W SystemServiceRegistry: No service published for: uimode
+08-30 11:09:06.616  3142  3142 I more.partfinder: type=1400 audit(0.0:4059): avc: denied { transfer } for scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1 app=com.smartmore.partfinder
+08-30 11:09:06.619  3142  3142 I RenderThread: type=1400 audit(0.0:4060): avc: denied { search } for name="/" dev="sda6" ino=2 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1 app=com.smartmore.partfinder
+08-30 11:09:06.619  3142  3142 I RenderThread: type=1400 audit(0.0:4061): avc: denied { open } for path="/system/etc/mumu-configs/currentApp" dev="sdc3" ino=5767951 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:system_data_file:s0 tclass=file permissive=1 app=com.smartmore.partfinder
+08-30 11:09:06.629  3142  3160 D more.partfinde: Features: 0 0 0
+08-30 11:09:06.630  3142  3160 E more.partfinde: vulkan version is 4211029
+08-30 11:09:06.631  3142  3160 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+08-30 11:09:06.649  1159  1445 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 4619827820427265280: Unsupported (8)
+08-30 11:09:06.649  1057  1057 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+08-30 11:09:06.649  3142  3160 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@4.0::IMapper instance: default
+08-30 11:09:06.650  1057  1057 I hwservicemanager: Since android.hardware.graphics.mapper@4.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+08-30 11:09:06.646  1057  1057 I hwservicemanage: type=1400 audit(0.0:4063): avc: denied { connectto } for path="/dev/socket/property_service" scontext=u:r:init:s0 tcontext=u:r:kernel:s0 tclass=unix_stream_socket permissive=1
+08-30 11:09:06.646  3142  3142 I RenderThread: type=1400 audit(0.0:4062): avc: denied { read } for name="hw" dev="sda6" ino=4721 scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1 app=com.smartmore.partfinder
+08-30 11:09:06.656  3142  3160 I Gralloc4: mapper 4.x is not supported
+08-30 11:09:06.657  1057  1057 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+08-30 11:09:06.657  3142  3160 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@3.0::IMapper instance: default
+08-30 11:09:06.657  1057  3224 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@4.0::IMapper/default": error code: 0x20
+08-30 11:09:06.657  1057  3224 I hwservicemanager: Tried to start android.hardware.graphics.mapper@4.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+08-30 11:09:06.657  1057  1057 I hwservicemanager: Since android.hardware.graphics.mapper@3.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+08-30 11:09:06.657  3142  3160 W Gralloc3: mapper 3.x is not supported
+08-30 11:09:06.658  3142  3160 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@2.0::IMapper instance: default
+08-30 11:09:06.662  1057  1057 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+08-30 11:09:06.663  3142  3160 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.allocator@4.0::IAllocator instance: default
+08-30 11:09:06.663  1057  1057 I hwservicemanager: Since android.hardware.graphics.allocator@4.0::IAllocator/default is not registered, trying to start it as a lazy HAL.
+08-30 11:09:06.663  3142  3160 W Gralloc4: allocator 4.x is not supported
+08-30 11:09:06.664  1057  3225 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@3.0::IMapper/default": error code: 0x20
+08-30 11:09:06.664  1057  3225 I hwservicemanager: Tried to start android.hardware.graphics.mapper@3.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+08-30 11:09:06.665  1057  1057 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@3.0::IAllocator/default in either framework or device VINTF manifest.
+08-30 11:09:06.665  3142  3160 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.allocator@3.0::IAllocator instance: default
+08-30 11:09:06.665  1057  1057 I hwservicemanager: Since android.hardware.graphics.allocator@3.0::IAllocator/default is not registered, trying to start it as a lazy HAL.
+08-30 11:09:06.665  3142  3160 W Gralloc3: allocator 3.x is not supported
+08-30 11:09:06.666  3142  3160 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.allocator@2.0::IAllocator instance: default
+08-30 11:09:06.667  3142  3160 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 33181696
+08-30 11:09:06.670  1057  3226 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.graphics.allocator@4.0::IAllocator/default": error code: 0x20
+08-30 11:09:06.670  1057  3226 I hwservicemanager: Tried to start android.hardware.graphics.allocator@4.0::IAllocator/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+08-30 11:09:06.677  1057  3227 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.graphics.allocator@3.0::IAllocator/default": error code: 0x20
+08-30 11:09:06.677  1057  3227 I hwservicemanager: Tried to start android.hardware.graphics.allocator@3.0::IAllocator/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+08-30 11:09:06.680  3142  3228 D more.partfinde: Features: 0 0 0
+08-30 11:09:06.680  3142  3228 E more.partfinde: vulkan version is 4211029
+08-30 11:09:06.681  3142  3228 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 33181696
+08-30 11:09:06.682  3142  3228 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 33181696
+08-30 11:09:06.770  3142  3142 V cr_A11yState: [AccessibilityState.java:297] Enabled accessibility services: [app.lawnchair/.LawnchairAccessibilityService]
+08-30 11:09:06.770  3142  3142 V cr_A11yState: [AccessibilityState.java:298] Running accessibility services: []
+08-30 11:09:06.770  3142  3142 V cr_A11yState: [AccessibilityState.java:299] Will check again after 500 milliseconds.
+08-30 11:09:06.771  1310  1327 I ActivityTaskManager: Displayed com.smartmore.partfinder/.MainActivity: +1s0ms
+08-30 11:09:06.924  1310  3097 W InputManager-JNI: Input channel object 'd38e7d3 Splash Screen com.smartmore.partfinder (client)' was disposed without first being removed with the input manager!
+08-30 11:09:07.228  3142  3142 W System.err: java.nio.file.NoSuchFileException: /system/lib64/null
+08-30 11:09:07.232  3142  3142 W System.err: 	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+08-30 11:09:07.232  3142  3142 W System.err: 	at java.nio.file.Files.newByteChannel(Files.java:361)
+08-30 11:09:07.232  3142  3142 W System.err: 	at java.nio.file.Files.newByteChannel(Files.java:407)
+08-30 11:09:07.232  3142  3142 W System.err: 	at java.nio.file.Files.readAllBytes(Files.java:3152)
+08-30 11:09:07.232  3142  3142 W System.err: 	at android.app.ActivityThread$ApplicationThread$2.run(ActivityThread.java:1859)
+08-30 11:09:07.232  3142  3142 W System.err: 	at android.os.Handler.handleCallback(Handler.java:938)
+08-30 11:09:07.232  3142  3142 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-30 11:09:07.232  3142  3142 W System.err: 	at android.os.Looper.loopOnce(Looper.java:201)
+08-30 11:09:07.232  3142  3142 W System.err: 	at android.os.Looper.loop(Looper.java:288)
+08-30 11:09:07.232  3142  3142 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:8085)
+08-30 11:09:07.232  3142  3142 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+08-30 11:09:07.232  3142  3142 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571)
+08-30 11:09:07.232  3142  3142 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1091)
+08-30 11:09:07.240  1310  3097 I RecentTaskMonitor: broadcast tab opened in android as it's new task1 109
+08-30 11:09:07.241  2025  2025 W AccMsgReceiver: AccMsgReceiver: onReceive action = nemu.intent.action.NEW_TASK
+08-30 11:09:07.244  1458  1458 D TabManager: setFocusTaskProp 109
+08-30 11:09:07.248  1458  1897 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1181 android.content.ContextWrapper.sendBroadcast:479 com.netease.nemu_vapi_android.thread.NewFileUpdater.notifyFocusedTabChanged:499 com.netease.nemu_vapi_android.thread.NewFileUpdater.onOpenNewTask:421 com.netease.nemu_vapi_android.worker.LocalAppManager.updateOnNewTask:259 
+08-30 11:09:07.252  1458  1897 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1181 android.content.ContextWrapper.sendBroadcast:479 com.netease.nemu_vapi_android.thread.NewFileUpdater.notifyFocusedTabChanged:504 com.netease.nemu_vapi_android.thread.NewFileUpdater.onOpenNewTask:421 com.netease.nemu_vapi_android.worker.LocalAppManager.updateOnNewTask:259 
+08-30 11:09:07.254  1458  1897 D NewFileUpdater: onOpenNewTask focusPkgName set to com.smartmore.partfinder
+08-30 11:09:07.254  1458  1897 D Watchdog: ignore events AppLaunch: {"app_name":"PartFinder","app_package":"com.smartmore.partfinder","event_duration":0,"failure_reason":"","status_code":0}
+08-30 11:09:07.258  1310  3083 W ActivityManager: Foreground service started from background can not have location/camera/microphone access: service com.mumu.acc/.AccService
+08-30 11:09:07.259  2025  2025 W AccMsgReceiver: AccMsgReceiver: onReceive action = com.mumu.launcher.ACTION_FOCUSED_TAB_CHANGED
+08-30 11:09:07.259  2025  2961 W AccServiceManager: onAppLaunch: packageName = com.smartmore.partfinder
+08-30 11:09:07.260  1310  1339 V ActivityManager: Attempted to start a foreground service (com.mumu.acc/.AccService) with a broken notification (no icon: Notification(channel=acc-service shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x40 color=0x00000000 vis=PRIVATE))
+08-30 11:09:07.261  1458  2378 D Watchdog: upload event: {"architecture":"x86_64","channel":"nochannel-mumu12","country":"zh-CN","engine":"NEMUX","fchannel":"nochannel-mumu12","language":"zh-Hans","mpid":"0","package":"mumu","product":"MuMu5.0","product_version":"5.23.0.3181","usage":"0","uuid":"fca2a6e4-149b-4627-9b56-1f31ab35d2f0","version":"5.23.0.3181","x":{"app_name":"PartFinder","app_package":"com.smartmore.partfinder","app_version_code":4,"app_version_name":"10.2.1","error":{"code":0,"msg":"ok"},"extra":{"NB":"{\"NB_64BIT\":\"true\"}","amp_name":"PartFinder","ampid":0,"is_remote_control":0},"token":"789d5956-094d-4130-b2c0-ba23474fc47e"}}	type: LaunchAPP	sign: 6BZaPWFpG+CYy6v9CA8wnEVdWcs=	uid: 1000	json:{"app_name":"PartFinder","app_package":"com.smartmore.partfinder","app_version_code":4,"app_version_name":"10.2.1","error":{"code":0,"msg":"ok"},"extra":{"NB":"{\"NB_64BIT\":\"true\"}","amp_name":"PartFinder","ampid":0,"is_remote_control":0},"token":"789d5956-094d-4130-b2c0-ba23474fc47e"}
+08-30 11:09:07.307  1458  2378 D Watchdog: upload server response: {"errcode": 100, "errmsg": "ok"}
+08-30 11:09:07.308  1458  2378 D Watchdog: upload result: true
+08-30 11:09:07.397  1458  1825 W NewFileUpdater: MSG_GET_PACKAGE_TAG_INFO, no available new tag for: com.smartmore.partfinder, workingTag: 12.2351
+08-30 11:09:07.520  3142  3142 V cr_A11yState: [AccessibilityState.java:297] Enabled accessibility services: [app.lawnchair/.LawnchairAccessibilityService]
+08-30 11:09:07.521  3142  3142 V cr_A11yState: [AccessibilityState.java:298] Running accessibility services: []
+08-30 11:09:07.521  3142  3142 V cr_A11yState: [AccessibilityState.java:299] Will check again after 1000 milliseconds.
+08-30 11:09:07.849  1310  1310 I WifiHandlerThre: type=1400 audit(0.0:4087): avc: denied { map_read } for scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=bpf permissive=1
+08-30 11:09:08.521  3142  3142 V cr_A11yState: [AccessibilityState.java:297] Enabled accessibility services: [app.lawnchair/.LawnchairAccessibilityService]
+08-30 11:09:08.521  3142  3142 V cr_A11yState: [AccessibilityState.java:298] Running accessibility services: []
+08-30 11:09:08.521  3142  3142 V cr_A11yState: [AccessibilityState.java:299] Will check again after 2000 milliseconds.
+08-30 11:09:10.521  3142  3142 V cr_A11yState: [AccessibilityState.java:297] Enabled accessibility services: [app.lawnchair/.LawnchairAccessibilityService]
+08-30 11:09:10.521  3142  3142 V cr_A11yState: [AccessibilityState.java:298] Running accessibility services: []
+08-30 11:09:10.521  3142  3142 V cr_A11yState: [AccessibilityState.java:299] Will check again after 4000 milliseconds.
+08-30 11:09:10.586  1594  1594 I IpClient.wlan0: type=1400 audit(0.0:4088): avc: denied { call } for scontext=u:r:network_stack:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+08-30 11:09:11.006  3251  3251 I adbd    : type=1400 audit(0.0:4089): avc: denied { search } for name="/" dev="sda6" ino=2 scontext=u:r:adbd:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+08-30 11:09:11.006  3251  3251 I adbd    : type=1400 audit(0.0:4090): avc: denied { execute } for name="sh" dev="sda6" ino=847 scontext=u:r:adbd:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+08-30 11:09:11.006  3251  3251 I adbd    : type=1400 audit(0.0:4091): avc: denied { read open } for path="/system/bin/sh" dev="sda6" ino=847 scontext=u:r:adbd:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+08-30 11:09:11.006  3251  3251 I adbd    : type=1400 audit(0.0:4092): avc: denied { execute_no_trans } for path="/system/bin/sh" dev="sda6" ino=847 scontext=u:r:adbd:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+08-30 11:09:11.006  3251  3251 I adbd    : type=1400 audit(0.0:4093): avc: denied { read } for name="linker64" dev="sda6" ino=733 scontext=u:r:adbd:s0 tcontext=u:object_r:unlabeled:s0 tclass=lnk_file permissive=1
+08-30 11:09:11.006  3251  3251 I sh      : type=1400 audit(0.0:4094): avc: denied { map } for path="/system/bin/sh" dev="sda6" ino=847 scontext=u:r:adbd:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+08-30 11:09:11.013  3251  3251 I sh      : type=1400 audit(0.0:4095): avc: denied { getattr } for path="/system/bin/sh" dev="sda6" ino=847 scontext=u:r:adbd:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+08-30 11:09:11.013  3251  3251 I sh      : type=1400 audit(0.0:4096): avc: denied { read } for name="/" dev="sda6" ino=2 scontext=u:r:adbd:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+08-30 11:09:11.223  3256  3256 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 11:09:13.668  3260  3260 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 11:09:13.666  2066  2066 I Thread-2: type=1400 audit(0.0:4100): avc: denied { use } for path="/dev/null" dev="tmpfs" ino=9109 scontext=u:r:mediaprovider_app:s0:c39,c256,c512,c768 tcontext=u:r:kernel:s0 tclass=fd permissive=1 app=com.android.providers.media.module
+08-30 11:09:13.683  2066  2181 W MediaProvider: isAppCloneUserPair failed. Users: 0 and 0
+08-30 11:09:13.683  2066  2181 W MediaProvider: isAppCloneUserPair for user 0: false
+08-30 11:09:13.679  2066  2066 I Thread-3: type=1400 audit(0.0:4101): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:mediaprovider_app:s0:c39,c256,c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1 app=com.android.providers.media.module
+08-30 11:09:13.689  3260  3260 I screencap: type=1400 audit(0.0:4102): avc: denied { transfer } for scontext=u:r:adbd:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+08-30 11:09:13.693  1159  1445 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 33181696
+08-30 11:09:13.689  1159  1159 I surfaceflinger: type=1400 audit(0.0:4103): avc: denied { call } for scontext=u:r:init:s0 tcontext=u:r:adbd:s0 tclass=binder permissive=1
+08-30 11:09:13.697  3260  3262 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 11:09:13.698  1057  1057 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+08-30 11:09:13.699  3260  3262 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@4.0::IMapper instance: default
+08-30 11:09:13.699  1057  1057 I hwservicemanager: Since android.hardware.graphics.mapper@4.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+08-30 11:09:13.699  3260  3262 I Gralloc4: mapper 4.x is not supported
+08-30 11:09:13.696  3260  3260 I Binder:3260_1: type=1400 audit(0.0:4104): avc: denied { open } for path="/system/vendor/lib64/hw" dev="sda6" ino=4721 scontext=u:r:adbd:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+08-30 11:09:13.699  1057  1057 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+08-30 11:09:13.700  3260  3262 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@3.0::IMapper instance: default
+08-30 11:09:13.700  1057  1057 I hwservicemanager: Since android.hardware.graphics.mapper@3.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+08-30 11:09:13.700  3260  3262 W Gralloc3: mapper 3.x is not supported
+08-30 11:09:13.700  3260  3262 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@2.0::IMapper instance: default
+08-30 11:09:13.700  2066  2170 W StorageManager: ignore the failure of setting attributes for /storage/emulated/0/y.png
+08-30 11:09:13.705  2066  2170 W StorageManager: ignore the failure of setting attributes for /storage/emulated/0/y.png
+08-30 11:09:13.706  1057  3263 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@4.0::IMapper/default": error code: 0x20
+08-30 11:09:13.706  1057  3263 I hwservicemanager: Tried to start android.hardware.graphics.mapper@4.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+08-30 11:09:13.711  1057  3264 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@3.0::IMapper/default": error code: 0x20
+08-30 11:09:13.711  1057  3264 I hwservicemanager: Tried to start android.hardware.graphics.mapper@3.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+08-30 11:09:13.722  3260  3262 D screencap: Features: 0 0 0
+08-30 11:09:13.722  3260  3262 E screencap: vulkan version is 4211029
+08-30 11:09:13.726  3260  3260 D screencap: Features: 0 0 0
+08-30 11:09:13.726  3260  3260 E screencap: vulkan version is 4211029
+08-30 11:09:14.166  3267  3267 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 11:09:14.174  1310  1339 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/y.png flg=0x400010 } to com.android.providers.media.module/com.android.providers.media.MediaReceiver
+08-30 11:09:14.512  2066  2181 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.shell
+08-30 11:09:14.527  3142  3142 V cr_A11yState: [AccessibilityState.java:297] Enabled accessibility services: [app.lawnchair/.LawnchairAccessibilityService]
+08-30 11:09:14.527  3142  3142 V cr_A11yState: [AccessibilityState.java:298] Running accessibility services: []
+08-30 11:09:14.527  3142  3142 V cr_A11yState: [AccessibilityState.java:299] Will check again after 8000 milliseconds.
+08-30 11:09:14.527  3142  3142 V cr_A11yState: [AccessibilityState.java:313] Informing listeners of changes.

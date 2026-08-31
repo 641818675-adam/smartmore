@@ -1,0 +1,19 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-30T17:27:00.000Z",
+  "rating": 4,
+  "categories": [
+    "客户"
+  ],
+  "message": "录客户少打很多字",
+  "app_version": "10.1.0-rc1",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 832,
+  "screen_height": 2268,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-16",
+  "finding_ids": [],
+  "evidence": "无问题命中，仅基线体验打分"
+}

@@ -1,0 +1,17 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-09-01T01:19:00.000Z",
+  "rating": 5,
+  "categories": [],
+  "message": "线长切换顺手",
+  "app_version": "10.1.0-rc1",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1080,
+  "screen_height": 2400,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-48",
+  "finding_ids": [],
+  "evidence": "无问题命中，仅基线体验打分"
+}

@@ -1,0 +1,48 @@
+{
+  "app_version": "10.1.0-rc1",
+  "round": 1,
+  "method": "代码走查 + 89 项离线断言 + perf.js 探针（证据均可独立复现）；模拟反馈基于本清单生成",
+  "items": [
+    {
+      "id": "R1-01",
+      "title": "竞品页搜索框没有「清空」按钮",
+      "priority": "P2",
+      "categories": ["搜索", "界面"],
+      "affected_focus": ["竞品", "搜索"],
+      "evidence": "web/js/app.js renderTopbar()：search 分支的搜索框在 state.query 非空时渲染 data-clear 按钮，rival 分支没有。同组件行为不一致。",
+      "fix": "rival 分支补齐清空按钮，行为与搜索页一致。",
+      "voice": "竞品页搜完想清掉重搜，得一个个删字"
+    },
+    {
+      "id": "R1-02",
+      "title": "极窄屏（Fold3 外屏 331dp）客户卡片三按钮竖排挤压信息区",
+      "priority": "P2",
+      "categories": ["界面", "客户"],
+      "affected_focus": ["客户", "界面"],
+      "affected_devices": ["fold3-folded"],
+      "evidence": "web/css/app.css .cust-actions 为竖排（3×62px 宽按钮占满右侧），卡片信息区被压到约 180px；331dp 外屏上地址行截断加剧。设计规范 §2.3 要求窄屏优先。",
+      "fix": "≤359dp 时操作按钮组换行为横向整行，信息区恢复全宽。",
+      "voice": "外屏上看客户地址被按钮挤得只剩半行"
+    },
+    {
+      "id": "R1-03",
+      "title": "空关键词浏览上限 300 条，「加载更多」到底后无出口无说明",
+      "priority": "P1",
+      "categories": ["搜索", "性能"],
+      "affected_focus": ["搜索", "选型"],
+      "evidence": "web/js/app.js runSearch() 检索上限传 300；全库 1213 条。用户按 30 次「加载更多」到 300 条后按钮消失，meta 文案没有解释为何看不全（列表页已写「列出前 300 条」但无后续指引）。",
+      "fix": "上限提升到 600 并保持「共 N 条 · 列出前 M 条」诚实文案；触顶时明确提示用筛选缩小范围。perf.js 实测单次检索 <7ms，600 条无性能风险。",
+      "voice": "想翻一遍配件库存，翻到 300 条就断了，也不知道去哪看剩下的"
+    },
+    {
+      "id": "R1-04",
+      "title": "深色模式下选中 chip 的投影沿用亮色蓝，观感发闷",
+      "priority": "P3",
+      "categories": ["界面"],
+      "affected_focus": ["界面"],
+      "evidence": "web/css/app.css .chip.on 硬编码 rgba(43,92,240,.32)（亮色 accent #2b5cf0 的投影）；暗色 accent 是 #7a9bff，投影色阶不匹配。违反设计规范 §2.1「禁止令牌外取色」。",
+      "fix": "新增 --accent-glow 令牌，亮暗各自定义；.chip.on/.btn.primary 引用令牌。",
+      "voice": "深色模式下选中的筛选块底下那圈蓝光发灰"
+    }
+  ]
+}

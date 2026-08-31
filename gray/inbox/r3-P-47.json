@@ -1,0 +1,28 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-09-01T00:18:00.000Z",
+  "rating": 2,
+  "categories": [
+    "客户",
+    "界面",
+    "搜索",
+    "性能"
+  ],
+  "message": "删了客户以后复制清单突然不带客户名了，我还以为坏了；看一遍配件库存要点二十下加载更多，手酸；打开应用第一眼，标题和状态栏时间糊在一起",
+  "app_version": "10.1.0-rc3",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 832,
+  "screen_height": 2268,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-47",
+  "finding_ids": [
+    "R3-01",
+    "R3-02",
+    "R3-04",
+    "R3-NA1",
+    "R3-NA2"
+  ],
+  "evidence": "R3-01: customer.js remove() 会静默取消该客户的选中态（remove 内部 setSelected(null)），data-modal-ok 的 toast 固定为『客户已删除』；详情页报价客户胶囊随之消失且无解释。 | R3-02: app.js data-more 处理器固定 state.shown += PAGE_SIZE(30)；R1-03 将上限从 300 提到 600 后，触顶所需点击次数从约 10 次涨到约 20 次，效率回退。 | R3-04: MuMu 真机截图 v101_home.png：页面大标题与状态栏时钟叠印。原因：WebView 内 env(safe-area-inset-top) 返回 0（无 cutout 设备），顶栏 padding 未兜底；对比 v10.0.0 旧截图 r01_home.png 确认为既有缺陷而非本轮回归。 | R3-NA1: 桌面版 quote.py 在未选客户时按「散客」落库；移动端复制文本未选客户时不带客户块。理由：移动端复制对象是 CRM 粘贴板而非报价单落库，「散客」字样对录 CRM 无信息量，反而添噪。桌面版与移动端复制语义本就不同（报价落库 vs 清单粘贴）。 | R3-NA2: 桌面版 pages/customer.py 无客户搜索；任务 1 约束为「功能对等、沿用现有交互」。待桌面版支持后同步。"
+}

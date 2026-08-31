@@ -1,0 +1,22 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-31T14:48:00.000Z",
+  "rating": 2,
+  "categories": [
+    "搜索",
+    "性能"
+  ],
+  "message": "想翻一遍配件库存，翻到 300 条就断了，也不知道去哪看剩下的",
+  "app_version": "10.1.0-rc1",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 832,
+  "screen_height": 2268,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-37",
+  "finding_ids": [
+    "R1-03"
+  ],
+  "evidence": "R1-03: web/js/app.js runSearch() 检索上限传 300；全库 1213 条。用户按 30 次「加载更多」到 300 条后按钮消失，meta 文案没有解释为何看不全（列表页已写「列出前 300 条」但无后续指引）。"
+}

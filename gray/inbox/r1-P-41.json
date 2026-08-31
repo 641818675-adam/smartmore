@@ -1,0 +1,22 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-31T18:12:00.000Z",
+  "rating": 3,
+  "categories": [
+    "搜索",
+    "界面"
+  ],
+  "message": "竞品页搜完想清掉重搜，得一个个删字",
+  "app_version": "10.1.0-rc1",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1768,
+  "screen_height": 2400,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-41",
+  "finding_ids": [
+    "R1-01"
+  ],
+  "evidence": "R1-01: web/js/app.js renderTopbar()：search 分支的搜索框在 state.query 非空时渲染 data-clear 按钮，rival 分支没有。同组件行为不一致。"
+}

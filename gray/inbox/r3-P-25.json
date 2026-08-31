@@ -1,0 +1,21 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-31T02:36:00.000Z",
+  "rating": 4,
+  "categories": [
+    "其他"
+  ],
+  "message": "",
+  "app_version": "10.1.0-rc3",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 832,
+  "screen_height": 2268,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-25",
+  "finding_ids": [
+    "R3-NA4"
+  ],
+  "evidence": "R3-NA4: cmd uimode night no 报告成功但 settings secure ui_night_mode 仍为 1，WebView 配置钉死夜间；窗口横向渲染导致竖屏窄栏(<600dp)形态无法重现。两者均为模拟器限制（v10.0.0 回归同样存在），浅色令牌由 CSS 走查与设计规范覆盖，留待真机抽检。"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-31T16:50:00.000Z",
+  "rating": 3,
+  "categories": [
+    "搜索",
+    "性能",
+    "界面"
+  ],
+  "message": "看一遍配件库存要点二十下加载更多，手酸；打开应用第一眼，标题和状态栏时间糊在一起",
+  "app_version": "10.1.0-rc3",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1600,
+  "screen_height": 2400,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-39",
+  "finding_ids": [
+    "R3-02",
+    "R3-04"
+  ],
+  "evidence": "R3-02: app.js data-more 处理器固定 state.shown += PAGE_SIZE(30)；R1-03 将上限从 300 提到 600 后，触顶所需点击次数从约 10 次涨到约 20 次，效率回退。 | R3-04: MuMu 真机截图 v101_home.png：页面大标题与状态栏时钟叠印。原因：WebView 内 env(safe-area-inset-top) 返回 0（无 cutout 设备），顶栏 padding 未兜底；对比 v10.0.0 旧截图 r01_home.png 确认为既有缺陷而非本轮回归。"
+}

@@ -1,0 +1,24 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-30T08:18:00.000Z",
+  "rating": 3,
+  "categories": [
+    "搜索",
+    "性能",
+    "其他"
+  ],
+  "message": "看一遍配件库存要点二十下加载更多，手酸",
+  "app_version": "10.1.0-rc3",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1080,
+  "screen_height": 2400,
+  "dark_mode": true,
+  "simulated": true,
+  "panelist": "P-07",
+  "finding_ids": [
+    "R3-02",
+    "R3-NA4"
+  ],
+  "evidence": "R3-02: app.js data-more 处理器固定 state.shown += PAGE_SIZE(30)；R1-03 将上限从 300 提到 600 后，触顶所需点击次数从约 10 次涨到约 20 次，效率回退。 | R3-NA4: cmd uimode night no 报告成功但 settings secure ui_night_mode 仍为 1，WebView 配置钉死夜间；窗口横向渲染导致竖屏窄栏(<600dp)形态无法重现。两者均为模拟器限制（v10.0.0 回归同样存在），浅色令牌由 CSS 走查与设计规范覆盖，留待真机抽检。"
+}

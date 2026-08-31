@@ -1,0 +1,19 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-30T11:21:00.000Z",
+  "rating": 3,
+  "categories": [
+    "界面"
+  ],
+  "message": "深色模式不刺眼了",
+  "app_version": "10.1.0-rc1",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1080,
+  "screen_height": 2400,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-10",
+  "finding_ids": [],
+  "evidence": "无问题命中，仅基线体验打分"
+}

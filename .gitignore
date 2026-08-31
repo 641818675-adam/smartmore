@@ -1,0 +1,30 @@
+# ---- 构建产物（可 rebuild，不入库）----
+/build/
+/pwa-dist/
+/.build-old-*/
+/web-baseline-*/
+
+# ---- 签名密钥与产物：绝不可入库 ----
+*.jks
+*.keystore
+*.apk
+*.apk.idsig
+*.idsig
+
+# ---- Python / Node 缓存 ----
+__pycache__/
+*.pyc
+node_modules/
+
+# ---- 截图归档（大文件，仅留说明文档）----
+/verify/shots/*.png
+/verify/**/*.png
+!/verify/shots/**/*说明*.md
+
+# ---- 编辑器 / 系统 ----
+.DS_Store
+Thumbs.db
+*.log
+
+# ---- Agent 工作区（非项目源码）----
+/.workbuddy/

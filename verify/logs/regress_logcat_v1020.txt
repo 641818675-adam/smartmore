@@ -1,0 +1,524 @@
+--------- beginning of main
+08-30 03:54:30.443  2047  2047 W AccMsgReceiver: AccMsgReceiver: onReceive action = android.intent.action.PACKAGE_ADDED
+08-30 03:54:30.444  2047  2079 I com.mumu.acc: Background concurrent copying GC freed 15376(790KB) AllocSpace objects, 6(120KB) LOS objects, 49% free, 3806KB/7612KB, paused 815us,54us total 276.376ms
+08-30 03:54:30.444  2047  2079 W com.mumu.acc: Reducing the number of considered missed Gc histogram windows from 139 to 100
+--------- beginning of system
+08-30 03:54:30.449  1305  1305 W Looper  : Slow delivery took 236ms main h=android.app.ActivityThread$H c=null m=133
+08-30 03:54:30.454  1305  1305 W Looper  : Drained
+08-30 03:54:30.463  1305  1314 I system_server: Background concurrent copying GC freed 92704(4543KB) AllocSpace objects, 29(772KB) LOS objects, 49% free, 12MB/25MB, paused 2.595ms,45us total 295.170ms
+08-30 03:54:30.474  1491  1507 I ndroid.systemu: Background concurrent copying GC freed 98255(4170KB) AllocSpace objects, 3(172KB) LOS objects, 49% free, 10MB/20MB, paused 14.796ms,21us total 306.169ms
+08-30 03:54:30.474  1491  1507 W ndroid.systemu: Reducing the number of considered missed Gc histogram windows from 141 to 100
+08-30 03:54:30.475  1305  1316 W System  : A resource failed to call close. 
+08-30 03:54:30.475  1305  1316 W System  : A resource failed to call close. 
+08-30 03:54:30.475  1305  1316 W System  : A resource failed to call close. 
+08-30 03:54:30.475  1305  1316 W System  : A resource failed to call close. 
+08-30 03:54:30.480  1305  4702 W ActivityManager: Foreground service started from background can not have location/camera/microphone access: service com.mumu.acc/.AccService
+08-30 03:54:30.481  1305  1335 V ActivityManager: Attempted to start a foreground service (com.mumu.acc/.AccService) with a broken notification (no icon: Notification(channel=acc-service shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x40 color=0x00000000 vis=PRIVATE))
+08-30 03:54:30.485  1305  3325 W ActivityManager: Foreground service started from background can not have location/camera/microphone access: service com.mumu.acc/.AccService
+08-30 03:54:30.487  1305  1335 V ActivityManager: Attempted to start a foreground service (com.mumu.acc/.AccService) with a broken notification (no icon: Notification(channel=acc-service shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x40 color=0x00000000 vis=PRIVATE))
+08-30 03:54:30.490  1491  1509 W System  : A resource failed to call release. 
+08-30 03:54:30.490  1491  1509 W System  : A resource failed to call release. 
+08-30 03:54:30.495  2035  2065 I PermissionControllerServiceImpl: Updating user sensitive for uid 10053
+08-30 03:54:30.517  2035  9247 W Role    : Cannot get ApplicationInfo for default holder: com.android.contacts
+08-30 03:54:30.526  2047  2418 D BoostKit: init() called with: installedPackageList = [[com.smartmore.partfinder]], listener = [com.mumu.acc.manager.c@d760b0c]
+08-30 03:54:30.529  2047  2418 D BoostKit: id:uuromsdk:7bd696c18efcff30
+08-30 03:54:30.529  2047  2418 D SdkInit : doInit() called
+08-30 03:54:30.529  2047  2418 D SdkInit : getGames() called
+08-30 03:54:30.543  1134  1134 I Binder:1134_2: type=1400 audit(0.0:10011): avc: denied { use } for path="socket:[67274]" dev="sockfs" ino=67274 scontext=u:r:init:s0 tcontext=u:r:platform_app:s0:c512,c768 tclass=fd permissive=1
+08-30 03:54:30.597  1983  1983 W System.err: com.mumu.store.data.remote.ApiError: 请校准本地系统时间
+08-30 03:54:30.599  1983  1983 W System.err: 	at com.mumu.store.data.remote.d.c(Proguard:50)
+08-30 03:54:30.599  1983  1983 W System.err: 	at com.mumu.store.data.remote.d.a(Proguard:3)
+08-30 03:54:30.599  1983  1983 W System.err: 	at retrofit2.x.f(Proguard:59)
+08-30 03:54:30.599  1983  1983 W System.err: 	at retrofit2.x.execute(Proguard:25)
+08-30 03:54:30.599  1983  1983 W System.err: 	at d3.c.E(Proguard:24)
+08-30 03:54:30.599  1983  1983 W System.err: 	at C1.h.c(Proguard:15)
+08-30 03:54:30.599  1983  1983 W System.err: 	at d3.a.E(Proguard:8)
+08-30 03:54:30.599  1983  1983 W System.err: 	at C1.h.c(Proguard:15)
+08-30 03:54:30.599  1983  1983 W System.err: 	at io.reactivex.internal.operators.observable.x$b.run(Proguard:7)
+08-30 03:54:30.599  1983  1983 W System.err: 	at C1.n$a.run(Proguard:10)
+08-30 03:54:30.599  1983  1983 W System.err: 	at io.reactivex.internal.schedulers.h.run(Proguard:14)
+08-30 03:54:30.599  1983  1983 W System.err: 	at io.reactivex.internal.schedulers.h.call(Proguard:1)
+08-30 03:54:30.599  1983  1983 W System.err: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+08-30 03:54:30.599  1983  1983 W System.err: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+08-30 03:54:30.599  1983  1983 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-30 03:54:30.599  1983  1983 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-30 03:54:30.599  1983  1983 W System.err: 	at java.lang.Thread.run(Thread.java:920)
+08-30 03:54:30.599  1983  2197 W System.err: com.mumu.store.data.remote.ApiError: 请校准本地系统时间
+08-30 03:54:30.599  1983  2197 W System.err: 	at com.mumu.store.data.remote.d.c(Proguard:50)
+08-30 03:54:30.599  1983  2197 W System.err: 	at com.mumu.store.data.remote.d.a(Proguard:3)
+08-30 03:54:30.599  1983  2197 W System.err: 	at retrofit2.x.f(Proguard:59)
+08-30 03:54:30.599  1983  2197 W System.err: 	at retrofit2.x.execute(Proguard:25)
+08-30 03:54:30.599  1983  2197 W System.err: 	at d3.c.E(Proguard:24)
+08-30 03:54:30.599  1983  2197 W System.err: 	at C1.h.c(Proguard:15)
+08-30 03:54:30.599  1983  2197 W System.err: 	at d3.a.E(Proguard:8)
+08-30 03:54:30.599  1983  2197 W System.err: 	at C1.h.c(Proguard:15)
+08-30 03:54:30.599  1983  2197 W System.err: 	at io.reactivex.internal.operators.observable.x$b.run(Proguard:7)
+08-30 03:54:30.599  1983  2197 W System.err: 	at C1.n$a.run(Proguard:10)
+08-30 03:54:30.599  1983  2197 W System.err: 	at io.reactivex.internal.schedulers.h.run(Proguard:14)
+08-30 03:54:30.599  1983  2197 W System.err: 	at io.reactivex.internal.schedulers.h.call(Proguard:1)
+08-30 03:54:30.599  1983  2197 W System.err: 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+08-30 03:54:30.599  1983  2197 W System.err: 	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:301)
+08-30 03:54:30.599  1983  2197 W System.err: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1167)
+08-30 03:54:30.599  1983  2197 W System.err: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:641)
+08-30 03:54:30.599  1983  2197 W System.err: 	at java.lang.Thread.run(Thread.java:920)
+08-30 03:54:30.593  1134  1134 I Dns_102_10014: type=1400 audit(0.0:10012): avc: denied { node_bind } for src=3882 scontext=u:r:init:s0 tcontext=u:object_r:node:s0 tclass=udp_socket permissive=1
+08-30 03:54:30.622  1305  1334 W TextServicesManagerService: no available spell checker services found
+08-30 03:54:30.640  2035  9247 W Role    : Cannot get ApplicationInfo for default holder: com.android.messaging
+08-30 03:54:30.645  2035  9247 W Role    : Cannot get ApplicationInfo for default holder: com.android.dialer
+08-30 03:54:30.653  9263  9263 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 03:54:30.660  1305  4703 I ActivityManager: Force stopping com.smartmore.partfinder appid=10053 user=0: from pid 9263
+08-30 03:54:30.656  1052  1052 I lmkd    : type=1400 audit(0.0:10013): avc: denied { write } for name="oom_score_adj" dev="proc" ino=18420 scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=file permissive=1
+08-30 03:54:30.685  1305  1334 W Searchables: No global search activity found
+08-30 03:54:30.686  1305  1334 W Searchables: No global search activity found
+08-30 03:54:30.687  1305  1334 W VoiceInteractionManager: no available voice recognition services found for user 0
+08-30 03:54:30.715  1622  1771 D BaseIconFactory: icon scale is 1.4517996
+08-30 03:54:30.735  1622  1771 D BaseIconFactory: icon scale is 1.4517996
+08-30 03:54:30.764  2047  9255 W AccRequestManager: getValidAccPkgDatasAfterRequests: hasMuMuRequestFinished = true, hasUuRequestFinished = false
+08-30 03:54:30.789  2047  2047 W AccRequestManager: getValidAccPkgDatasAfterRequests: hasMuMuRequestFinished = true, hasUuRequestFinished = true
+08-30 03:54:31.881  9274  9274 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 03:54:31.884  1305  4703 I ActivityTaskManager: START u0 {flg=0x10000000 cmp=com.smartmore.partfinder/.MainActivity} from uid 2000, pid 9274
+08-30 03:54:31.889  1305  4703 I ActivityTaskManager: [KeepAlive] disabled for com.smartmore.partfinder
+08-30 03:54:31.890  1305  4703 W ActivityTaskManager: Can't find TaskDisplayArea to determine support for multi window. Task id=107 attached=false
+08-30 03:54:31.891  1305  4703 D CompatibilityChangeReporter: Compat change id reported: 174042980; UID 10053; state: DISABLED
+08-30 03:54:31.891  1305  4703 D CompatibilityChangeReporter: Compat change id reported: 184838306; UID 10053; state: DISABLED
+08-30 03:54:31.891  1305  4703 D CompatibilityChangeReporter: Compat change id reported: 185004937; UID 10053; state: DISABLED
+08-30 03:54:31.892  1305  4703 D CompatibilityChangeReporter: Compat change id reported: 181136395; UID 10053; state: DISABLED
+08-30 03:54:31.892  1305  4703 D CompatibilityChangeReporter: Compat change id reported: 174042936; UID 10053; state: DISABLED
+08-30 03:54:31.893  1305  4703 D CompatibilityChangeReporter: Compat change id reported: 197654537; UID 10053; state: ENABLED
+08-30 03:54:31.903  1491  1689 W StartingSurfaceDrawer: Window background is transparent, fill background with black color
+08-30 03:54:31.903  1491  1491 I ll.splashworker: type=1400 audit(0.0:10014): avc: denied { map } for path="/system/framework/framework-res.apk" dev="sda6" ino=2324 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1 app=com.android.systemui
+08-30 03:54:31.903  1491  1491 I ll.splashworker: type=1400 audit(0.0:10015): avc: denied { read } for path="/system/framework/framework-res.apk" dev="sda6" ino=2324 scontext=u:r:platform_app:s0:c512,c768 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1 app=com.android.systemui
+08-30 03:54:31.909  1305  1326 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10053; state: DISABLED
+08-30 03:54:31.910  1305  1326 D CompatibilityChangeReporter: Compat change id reported: 177438394; UID 10053; state: DISABLED
+08-30 03:54:31.910  1305  1326 D CompatibilityChangeReporter: Compat change id reported: 135772972; UID 10053; state: DISABLED
+08-30 03:54:31.910  1305  1326 D CompatibilityChangeReporter: Compat change id reported: 135754954; UID 10053; state: ENABLED
+08-30 03:54:31.910  1305  1336 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10053; state: ENABLED
+08-30 03:54:31.906  1135  1135 I main    : type=1400 audit(0.0:10016): avc: denied { getattr } for path="/apex/com.android.permission/javalib/framework-permission-s.jar" dev="sda6" ino=444 scontext=u:r:zygote:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+08-30 03:54:31.920  1135  1135 D Zygote  : Forked child process 9277
+08-30 03:54:31.916  9277  9277 I main    : type=1400 audit(0.0:10017): avc: denied { search } for name="com.android.permission" dev="sda6" ino=435 scontext=u:r:zygote:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+08-30 03:54:31.916  9277  9277 I main    : type=1400 audit(0.0:10018): avc: denied { read } for name="framework-permission-s.jar" dev="sda6" ino=444 scontext=u:r:zygote:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+08-30 03:54:31.916  9277  9277 I main    : type=1400 audit(0.0:10019): avc: denied { open } for path="/apex/com.android.permission/javalib/framework-permission-s.jar" dev="sda6" ino=444 scontext=u:r:zygote:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+08-30 03:54:31.922  1983  1983 W WidgetOperateReceiver: onReceive: intent = Intent { act=com.mumu.LAUNCHER_LIFECYCLE flg=0x10 pkg=com.mumu.store cmp=com.mumu.store/.widget.receiver.WidgetOperateReceiver (has extras) } action = com.mumu.LAUNCHER_LIFECYCLE
+08-30 03:54:31.922  1983  1983 W WidgetOperateReceiver: onLauncherLifecycle: launcherLifecycle = ON_PAUSE
+08-30 03:54:31.922  1983  1983 W WidgetManager: updateLauncherLifecycle: launcherLifecycleName = ON_PAUSE
+08-30 03:54:31.922  9277  9277 I Zygote  : fakeProductInfoIfNeed callded! com.smartmore.partfinder
+08-30 03:54:31.926  9277  9277 I Zygote  : fake Product info com.smartmore.partfinder not matched any pattern
+08-30 03:54:31.926  9277  9277 I Zygote  : fakeProductInfoFromProperties callded! com.smartmore.partfinder
+08-30 03:54:31.923  9277  9277 I main    : type=1400 audit(0.0:10020): avc: denied { read } for name="u:object_r:serialno_prop:s0" dev="tmpfs" ino=11389 scontext=u:r:zygote:s0 tcontext=u:object_r:serialno_prop:s0 tclass=file permissive=1
+08-30 03:54:31.935  1305  1336 I ActivityManager: Start proc 9277:com.smartmore.partfinder/u0a53 for pre-top-activity {com.smartmore.partfinder/com.smartmore.partfinder.MainActivity}
+08-30 03:54:31.936  9277  9277 E NemuAppNameUtil: save data success
+08-30 03:54:31.941  1491  1721 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 33181696
+08-30 03:54:31.944  9277  9277 I Zygote  : seccomp disabled by setenforce 0
+08-30 03:54:31.951  9277  9277 W more.partfinde: Unexpected CPU variant for X86 using defaults: x86_64
+08-30 03:54:31.956  1491  9278 D ndroid.systemu: Features: 0 0 0
+08-30 03:54:31.956  1491  9278 E ndroid.systemu: vulkan version is 4211029
+08-30 03:54:31.958  1491  9278 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 33181696
+08-30 03:54:31.959  1491  9278 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 33181696
+08-30 03:54:31.964  9277  9277 E more.partfinde: Not starting debugger since process cannot load the jdwp agent.
+08-30 03:54:31.971  9277  9277 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 03:54:31.972  1192  1192 D opengl-gc: Check pid 8927: running 0
+08-30 03:54:31.994  1305  3325 W OomAdjuster: Fallback pre-set sched group to default: not expected top priority
+08-30 03:54:32.000  1305  3325 D RecentTaskMonitor: onTaskFocusChanged [FALSE] 2
+08-30 03:54:32.000  1305  3325 D RecentTaskMonitor: onTaskFocusChanged [TRUE] 107 ignoreTFC false
+08-30 03:54:32.007  9277  9291 E ashmem  : memfd: ro.vndk.version not defined or invalid (), this is mandated since P.
+08-30 03:54:32.008  9277  9277 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 10053; state: ENABLED
+08-30 03:54:32.012  1305  1326 D RecentTaskMonitor: task null or not sub display in notifyDisplayOpened
+08-30 03:54:32.012  1305  1326 D RecentTaskMonitor: VAddressShellNotifier#notifyOpenTab :{"uri":"player\/tab","need_response":false,"params":{"id":"task:107","displayId":0,"userId":0,"name":"PartFinder","originName":"PartFinder","packageName":"com.smartmore.partfinder","launcher":false,"newTask":true,"icon":"iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARzQklUCAgICHwIZIgAAACMSURBVEiJ7ZaxDQJRDEOf4VcIUdDBBqwCM7DBTUdDQ8ksDIBojjtiGvqj+ClA3wP4yUksRZvjbafZ6wJsqSjDA3woVn\/FrGuaf7Q0nItiyDAHQLAojjHLH4B8AG4JJgD5CdKvKHtExJAL+IOi\/f6SW9GmAK1o3wDuEqsMc5tnGSP2c8VJlT8LS32Y7g3ONlCC3DgkWQAAAABJRU5ErkJggg==","canChangeAppOrientation":false,"canReceiveFile":false,"pid":9277,"uid":10053,"action":"open"}}
+08-30 03:54:32.014  1069  1082 D nemuinit: start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 840
+08-30 03:54:32.017  1069  9293 D nemuinit: Proxy: use callback: 1491, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+08-30 03:54:32.017  1069  9293 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 03:54:32.019  1069  9293 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+08-30 03:54:32.019  1069  9293 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 03:54:32.049  9277  9277 D NemuJavaHotPatchHelper: onHandleBindApplication reportedPackageName:com.smartmore.partfinder isMatchJavaPatch:false
+08-30 03:54:32.148  1069  1082 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, id: 841
+08-30 03:54:32.148  1069  1082 D nemuinit: start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 842
+08-30 03:54:32.148  1069  9294 D nemuinit: Proxy: use callback: 1491, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, res: 
+08-30 03:54:32.148  1069  9294 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 03:54:32.148  1069  9295 D nemuinit: Proxy: use callback: 1491, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+08-30 03:54:32.148  1069  9295 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 03:54:32.151  1069  1082 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, id: 843
+08-30 03:54:32.151  1069  9296 D nemuinit: Proxy: use callback: 1491, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, res: 
+08-30 03:54:32.151  1069  9296 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 03:54:32.151  1069  9295 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+08-30 03:54:32.151  1069  9295 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 03:54:32.152  1069  9296 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, res: {"errcode":0,"message":"OK"}
+08-30 03:54:32.152  1069  9294 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, res: {"errcode":0,"message":"OK"}
+08-30 03:54:32.152  1069  9296 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 03:54:32.152  1069  9294 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 03:54:32.152  1069  1082 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, id: 844
+08-30 03:54:32.153  1069  1082 D nemuinit: start name: vapi, operation: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, id: 845
+08-30 03:54:32.153  1069  9297 D nemuinit: Proxy: use callback: 1491, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, res: 
+08-30 03:54:32.153  1069  9297 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 03:54:32.153  1069  9298 D nemuinit: Proxy: use callback: 1491, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: 
+08-30 03:54:32.153  1069  9298 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 03:54:32.153  1069  9298 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/cmd","method":"POST","params":{"action":"switch_fps_mode","packageName":""}}, res: {"errcode":0,"message":"OK"}
+08-30 03:54:32.153  1069  9298 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 03:54:32.153  1069  9297 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, res: {"errcode":0,"message":"OK"}
+08-30 03:54:32.153  1069  9297 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 03:54:32.154  9277  9277 I Typeface: Preloading /system/fonts/Roboto-Regular.ttf
+08-30 03:54:32.156  1069  1082 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, id: 846
+08-30 03:54:32.156  1069  1082 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, id: 847
+08-30 03:54:32.156  1069  1082 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, id: 848
+08-30 03:54:32.156  1069  1082 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, id: 849
+08-30 03:54:32.156  1069  1082 D nemuinit: start name: vapi, operation: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, id: 850
+08-30 03:54:32.157  1069  9300 D nemuinit: Proxy: use callback: 1491, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: 
+08-30 03:54:32.157  1069  9300 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 03:54:32.157  1069  9301 D nemuinit: Proxy: use callback: 1491, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, res: 
+08-30 03:54:32.157  1069  9301 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 03:54:32.157  1069  9302 D nemuinit: Proxy: use callback: 1491, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: 
+08-30 03:54:32.157  1069  9302 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 03:54:32.157  1069  9299 D nemuinit: Proxy: use callback: 1491, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, res: 
+08-30 03:54:32.157  1069  9299 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 03:54:32.157  1069  9302 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: {"errcode":0,"message":"OK"}
+08-30 03:54:32.157  1069  9302 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 03:54:32.158  1069  9303 D nemuinit: Proxy: use callback: 1491, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, res: 
+08-30 03:54:32.158  1069  9300 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_gamepad_guid","guid":"off","name":"off","type":"off"}}, res: {"errcode":0,"message":"OK"}
+08-30 03:54:32.158  1069  9300 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 03:54:32.158  1069  9303 D nemuinit: Proxy: not handleNemuInitMessage, use next callback
+08-30 03:54:32.158  1069  9301 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, res: {"errcode":0,"message":"OK"}
+08-30 03:54:32.158  1069  9301 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 03:54:32.159  1069  9299 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, res: {"errcode":0,"message":"OK"}
+08-30 03:54:32.159  1069  9299 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 03:54:32.160  1069  9303 D nemuinit: Proxy: use callback: 1458, handleNemuInitMessage, name: vapi, params: {"uri":"/tools/inputdevice","method":"POST","params":{"action":"set_input_device_list","device":8,"packageName":"com.smartmore.partfinder","pid":9277,"uid":10053}}, res: {"errcode":0,"message":"OK"}
+08-30 03:54:32.160  1069  9303 D nemuinit: Proxy: finish handleNemuInitMessage
+08-30 03:54:32.255  9277  9277 V GraphicsEnvironment: ANGLE Developer option for 'com.smartmore.partfinder' set to: 'default'
+08-30 03:54:32.257  9277  9277 V GraphicsEnvironment: ANGLE GameManagerService for com.smartmore.partfinder: false
+08-30 03:54:32.257  9277  9277 V GraphicsEnvironment: Neither updatable production driver nor prerelease driver is supported.
+08-30 03:54:32.260  9277  9277 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+08-30 03:54:32.261  9277  9277 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+08-30 03:54:32.299  9277  9307 D libEGL  : loaded /system/lib64/egl/libEGL_emulation.so
+08-30 03:54:32.323  9277  9307 D more.partfinde: Features: 0 0 0
+08-30 03:54:32.324  9277  9307 E more.partfinde: vulkan version is 4211029
+08-30 03:54:32.328  9277  9307 D libEGL  : loaded /system/lib64/egl/libGLESv1_CM_emulation.so
+08-30 03:54:32.332  9277  9307 D libEGL  : loaded /system/lib64/egl/libGLESv2_emulation.so
+08-30 03:54:32.349  9277  9277 I WebViewFactory: Loading com.android.webview version 110.0.5481.154.1 (code 548115537)
+08-30 03:54:32.360  9277  9307 E GraphicsEnv: Failed to get gpu service
+08-30 03:54:32.365  9277  9277 W more.partfinde: Entry not found
+08-30 03:54:32.377  9277  9277 E WebViewLibraryLoader: can't load with relro file; address space not reserved
+08-30 03:54:32.605  9277  9277 I cr_WVCFactoryProvider: Loaded version=110.0.5481.154 minSdkVersion=29 isBundle=false multiprocess=true packageId=2
+08-30 03:54:32.843  9277  9277 V WebViewChromiumAwInit: Binding Chromium to main looper Looper (main, tid 2) {2c41a4d}
+08-30 03:54:32.871  9277  9277 I cr_LibraryLoader: Successfully loaded native library
+08-30 03:54:32.874  9277  9277 I cr_CachingUmaRecorder: Flushed 9 samples from 9 histograms.
+08-30 03:54:32.922  9277  9311 D cr_ChildProcLH: [ChildProcessLauncherHelperImpl.java:584] Create a new ChildConnectionAllocator with package name = com.android.webview, sandboxed = true
+08-30 03:54:32.939  9277  9277 D cr_BrowserStartup: [BrowserStartupControllerImpl.java:437] Initializing chromium process, singleProcess=false
+08-30 03:54:32.953  1305  1305 I Binder:1305_19: type=1400 audit(0.0:10058): avc: denied { sendto } for path="/dev/socket/statsdw" scontext=u:r:system_server:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+08-30 03:54:32.959  1305  4703 D CompatibilityChangeReporter: Compat change id reported: 135634846; UID 10053; state: DISABLED
+08-30 03:54:32.960  1305  1336 D CompatibilityChangeReporter: Compat change id reported: 143937733; UID 10053; state: ENABLED
+08-30 03:54:32.956  1700  1700 I webview_zygote: type=1400 audit(0.0:10059): avc: denied { getattr } for path="/system/product/app/TrichromeLibrary/TrichromeLibrary.apk" dev="sda6" ino=4117 scontext=u:r:webview_zygote:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+08-30 03:54:32.966  1700  1700 I webview_zygote: type=1400 audit(0.0:10060): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:webview_zygote:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+08-30 03:54:32.969  1700  1700 D Zygote  : Forked child process 9312
+08-30 03:54:32.972  1305  1336 I ActivityManager: Start proc 9312:com.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i29 for  {com.smartmore.partfinder/org.chromium.content.app.SandboxedProcessService0:0}
+08-30 03:54:32.975  9312  9312 I Zygote  : fakeProductInfoIfNeed callded! com.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+08-30 03:54:32.966  9312  9312 I webview_zygote: type=1400 audit(0.0:10061): avc: denied { search } for name="/" dev="sda6" ino=2 scontext=u:r:webview_zygote:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+08-30 03:54:32.966  9312  9312 I webview_zygote: type=1400 audit(0.0:10062): avc: denied { read } for name="TrichromeLibrary.apk" dev="sda6" ino=4117 scontext=u:r:webview_zygote:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+08-30 03:54:32.979  9312  9312 I Zygote  : fake Product info com.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0 not matched any pattern
+08-30 03:54:32.979  9312  9312 I Zygote  : fakeProductInfoFromProperties callded! com.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+08-30 03:54:32.979  9312  9312 I Zygote  : fakeProductInfoFromProperties disable for uid ! com.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+08-30 03:54:32.987  9312  9312 E NemuAppNameUtil: save data to file error
+08-30 03:54:32.987  9312  9312 E NemuAppNameUtil: save data fail, try save again!!
+08-30 03:54:32.990  9312  9312 I Zygote  : seccomp disabled by setenforce 0
+08-30 03:54:32.999  9312  9312 W ocessService0:: Unexpected CPU variant for X86 using defaults: x86_64
+08-30 03:54:33.002  9312  9312 E ocessService0:: Not starting debugger since process cannot load the jdwp agent.
+08-30 03:54:33.006  9312  9312 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 03:54:33.026  9312  9324 E ashmem  : memfd: ro.vndk.version not defined or invalid (), this is mandated since P.
+08-30 03:54:33.042  9312  9312 D CompatibilityChangeReporter: Compat change id reported: 171979766; UID 99029; state: ENABLED
+08-30 03:54:33.076  9312  9312 D NemuJavaHotPatchHelper: onHandleBindApplication reportedPackageName:com.smartmore.partfinder isMatchJavaPatch:false
+08-30 03:54:33.077  9312  9312 I Typeface: Preloading /system/fonts/Roboto-Regular.ttf
+08-30 03:54:33.193  9277  9277 V cr_A11yState: [AccessibilityState.java:297] Enabled accessibility services: [app.lawnchair/.LawnchairAccessibilityService]
+08-30 03:54:33.194  9277  9277 V cr_A11yState: [AccessibilityState.java:298] Running accessibility services: []
+08-30 03:54:33.194  9277  9277 V cr_A11yState: [AccessibilityState.java:299] Will check again after 250 milliseconds.
+08-30 03:54:33.200  9312  9312 I LoadedApk: No resource references to update in package com.android.trichromelibrary
+08-30 03:54:33.200  9312  9312 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+08-30 03:54:33.201  9312  9312 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+08-30 03:54:33.219  9277  9329 W chromium: [WARNING:dns_config_service_android.cc(115)] Failed to read DnsConfig.
+08-30 03:54:33.223  9312  9312 I cr_WebViewApkApp: Launched version=110.0.5481.154 minSdkVersion=29 isBundle=false processName=com.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+08-30 03:54:33.227  9312  9312 I cr_ChildProcessService: Creating new ChildProcessService pid=9312
+08-30 03:54:33.241  9312  9312 E WebViewLibraryLoader: can't load with relro file; address space not reserved
+08-30 03:54:33.371  2598  9342 W cr_MetricsBridgeService: retained records has reached the max capacity, dropping record
+08-30 03:54:33.375  2598  9344 W cr_MetricsBridgeService: retained records has reached the max capacity, dropping record
+08-30 03:54:33.405  9277  9277 D CompatibilityChangeReporter: Compat change id reported: 171228096; UID 10053; state: ENABLED
+08-30 03:54:33.560  9277  9335 W cr_media: BLUETOOTH_CONNECT permission is missing.
+08-30 03:54:33.561  9277  9348 D more.partfinde: Features: 0 0 0
+08-30 03:54:33.561  9277  9348 E more.partfinde: vulkan version is 4211029
+08-30 03:54:33.564  9277  9335 W cr_media: registerBluetoothIntentsIfNeeded: Requires BLUETOOTH permission
+08-30 03:54:33.571  9277  9348 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 03:54:33.573  9277  9348 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.configstore@1.0::ISurfaceFlingerConfigs instance: default
+08-30 03:54:33.581  9277  9311 D cr_ChildProcLH: [ChildProcessLauncherHelperImpl.java:287] Connection likely not created from app zygote
+08-30 03:54:33.582  9277  9311 D cr_ChildProcLauncher: [ChildProcessLauncher.java:250] on connect callback, pid=9312
+08-30 03:54:33.594  9312  9334 I cr_LibraryLoader: Successfully loaded native library
+08-30 03:54:33.595  9312  9334 I cr_CachingUmaRecorder: Flushed 3 samples from 3 histograms.
+08-30 03:54:33.608  9312  9334 W SystemServiceRegistry: No service published for: uimode
+08-30 03:54:33.677  2598  9342 W cr_MetricsBridgeService: retained records has reached the max capacity, dropping record
+08-30 03:54:33.677  2598  9343 W cr_MetricsBridgeService: retained records has reached the max capacity, dropping record
+08-30 03:54:33.677  2598  9343 W cr_MetricsBridgeService: retained records has reached the max capacity, dropping record
+08-30 03:54:33.678  9277  9277 V cr_A11yState: [AccessibilityState.java:297] Enabled accessibility services: [app.lawnchair/.LawnchairAccessibilityService]
+08-30 03:54:33.679  9277  9277 V cr_A11yState: [AccessibilityState.java:298] Running accessibility services: []
+08-30 03:54:33.679  9277  9277 V cr_A11yState: [AccessibilityState.java:299] Will check again after 500 milliseconds.
+08-30 03:54:33.763  9277  9305 D more.partfinde: Features: 0 0 0
+08-30 03:54:33.763  9277  9305 E more.partfinde: vulkan version is 4211029
+08-30 03:54:33.769  9277  9305 W OpenGLRenderer: Failed to choose config with EGL_SWAP_BEHAVIOR_PRESERVED, retrying without...
+08-30 03:54:33.829  1156  3025 E HWComposer: getSupportedContentTypes: getSupportedContentTypes failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:33.834  1055  1055 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+08-30 03:54:33.834  9277  9305 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@4.0::IMapper instance: default
+08-30 03:54:33.836  1055  1055 I hwservicemanager: Since android.hardware.graphics.mapper@4.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+08-30 03:54:33.842  9277  9305 I Gralloc4: mapper 4.x is not supported
+08-30 03:54:33.843  1055  1055 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+08-30 03:54:33.843  9277  9305 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@3.0::IMapper instance: default
+08-30 03:54:33.843  1055  1055 I hwservicemanager: Since android.hardware.graphics.mapper@3.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+08-30 03:54:33.843  9277  9305 W Gralloc3: mapper 3.x is not supported
+08-30 03:54:33.845  9277  9305 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@2.0::IMapper instance: default
+08-30 03:54:33.848  1055  9359 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@4.0::IMapper/default": error code: 0x20
+08-30 03:54:33.848  1055  9359 I hwservicemanager: Tried to start android.hardware.graphics.mapper@4.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+08-30 03:54:33.857  1055  9360 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@3.0::IMapper/default": error code: 0x20
+08-30 03:54:33.857  1055  9360 I hwservicemanager: Tried to start android.hardware.graphics.mapper@3.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+08-30 03:54:33.860  1055  1055 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+08-30 03:54:33.861  9277  9305 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.allocator@4.0::IAllocator instance: default
+08-30 03:54:33.862  1055  1055 I hwservicemanager: Since android.hardware.graphics.allocator@4.0::IAllocator/default is not registered, trying to start it as a lazy HAL.
+08-30 03:54:33.862  9277  9305 W Gralloc4: allocator 4.x is not supported
+08-30 03:54:33.870  1055  9361 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.graphics.allocator@4.0::IAllocator/default": error code: 0x20
+08-30 03:54:33.870  1055  9361 I hwservicemanager: Tried to start android.hardware.graphics.allocator@4.0::IAllocator/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+08-30 03:54:33.870  1055  1055 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.allocator@3.0::IAllocator/default in either framework or device VINTF manifest.
+08-30 03:54:33.870  9277  9305 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.allocator@3.0::IAllocator instance: default
+08-30 03:54:33.871  1055  1055 I hwservicemanager: Since android.hardware.graphics.allocator@3.0::IAllocator/default is not registered, trying to start it as a lazy HAL.
+08-30 03:54:33.873  9277  9305 W Gralloc3: allocator 3.x is not supported
+08-30 03:54:33.874  9277  9305 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.allocator@2.0::IAllocator instance: default
+08-30 03:54:33.875  9277  9305 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 33181696
+08-30 03:54:33.881  1055  9362 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.graphics.allocator@3.0::IAllocator/default": error code: 0x20
+08-30 03:54:33.881  1055  9362 I hwservicemanager: Tried to start android.hardware.graphics.allocator@3.0::IAllocator/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+08-30 03:54:33.892  9277  9363 D more.partfinde: Features: 0 0 0
+08-30 03:54:33.892  9277  9363 E more.partfinde: vulkan version is 4211029
+08-30 03:54:33.894  9277  9363 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 33181696
+08-30 03:54:33.897  9277  9363 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 33181696
+08-30 03:54:33.996  9277  9277 I RenderThread: type=1400 audit(0.0:10118): avc: denied { use } for path="/dev/ashmem3bf839dc-5d14-4e3a-b6f5-5f900ef844b5" dev="tmpfs" ino=11797 scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tclass=fd permissive=1
+08-30 03:54:33.996  1156  1156 I Binder:1156_4: type=1400 audit(0.0:10119): avc: denied { call } for scontext=u:r:init:s0 tcontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tclass=binder permissive=1
+08-30 03:54:34.058  9277  9286 I more.partfinde: Background young concurrent copying GC freed 150246(14MB) AllocSpace objects, 8(160KB) LOS objects, 89% free, 2757KB/26MB, paused 68us,393us total 106.047ms
+08-30 03:54:34.089  9277  9277 I more.partfinder: type=1400 audit(0.0:10120): avc: denied { read } for scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:r:init:s0 tclass=unix_stream_socket permissive=1
+08-30 03:54:34.113  9277  9277 I RenderThread: type=1400 audit(0.0:10121): avc: denied { call } for scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+08-30 03:54:34.113  9277  9277 I RenderThread: type=1400 audit(0.0:10122): avc: denied { transfer } for scontext=u:r:untrusted_app:s0:c53,c256,c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1
+08-30 03:54:34.215  1305  1323 I ActivityTaskManager: Displayed com.smartmore.partfinder/.MainActivity: +2s239ms
+08-30 03:54:34.224  9277  9277 V cr_A11yState: [AccessibilityState.java:297] Enabled accessibility services: [app.lawnchair/.LawnchairAccessibilityService]
+08-30 03:54:34.224  9277  9277 V cr_A11yState: [AccessibilityState.java:298] Running accessibility services: []
+08-30 03:54:34.225  9277  9277 V cr_A11yState: [AccessibilityState.java:299] Will check again after 1000 milliseconds.
+08-30 03:54:34.351  1305  3325 W InputManager-JNI: Input channel object '9f39dd8 Splash Screen com.smartmore.partfinder (client)' was disposed without first being removed with the input manager!
+08-30 03:54:34.562  9277  9277 W System.err: java.nio.file.NoSuchFileException: /system/lib64/null
+08-30 03:54:34.565  9277  9277 W System.err: 	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214)
+08-30 03:54:34.565  9277  9277 W System.err: 	at java.nio.file.Files.newByteChannel(Files.java:361)
+08-30 03:54:34.565  9277  9277 W System.err: 	at java.nio.file.Files.newByteChannel(Files.java:407)
+08-30 03:54:34.565  9277  9277 W System.err: 	at java.nio.file.Files.readAllBytes(Files.java:3152)
+08-30 03:54:34.565  9277  9277 W System.err: 	at android.app.ActivityThread$ApplicationThread$2.run(ActivityThread.java:1859)
+08-30 03:54:34.565  9277  9277 W System.err: 	at android.os.Handler.handleCallback(Handler.java:938)
+08-30 03:54:34.565  9277  9277 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:99)
+08-30 03:54:34.565  9277  9277 W System.err: 	at android.os.Looper.loopOnce(Looper.java:201)
+08-30 03:54:34.565  9277  9277 W System.err: 	at android.os.Looper.loop(Looper.java:288)
+08-30 03:54:34.565  9277  9277 W System.err: 	at android.app.ActivityThread.main(ActivityThread.java:8085)
+08-30 03:54:34.565  9277  9277 W System.err: 	at java.lang.reflect.Method.invoke(Native Method)
+08-30 03:54:34.565  9277  9277 W System.err: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571)
+08-30 03:54:34.565  9277  9277 W System.err: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1091)
+08-30 03:54:34.577  1305  3325 I RecentTaskMonitor: broadcast tab opened in android as it's new task1 107
+08-30 03:54:34.594  1458  1458 D TabManager: setFocusTaskProp 107
+08-30 03:54:34.620  1458  1891 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1181 android.content.ContextWrapper.sendBroadcast:479 com.netease.nemu_vapi_android.thread.NewFileUpdater.notifyFocusedTabChanged:499 com.netease.nemu_vapi_android.thread.NewFileUpdater.onOpenNewTask:421 com.netease.nemu_vapi_android.worker.LocalAppManager.updateOnNewTask:259 
+08-30 03:54:34.620  2047  2047 W AccMsgReceiver: AccMsgReceiver: onReceive action = nemu.intent.action.NEW_TASK
+08-30 03:54:34.621  1458  1891 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.sendBroadcast:1181 android.content.ContextWrapper.sendBroadcast:479 com.netease.nemu_vapi_android.thread.NewFileUpdater.notifyFocusedTabChanged:504 com.netease.nemu_vapi_android.thread.NewFileUpdater.onOpenNewTask:421 com.netease.nemu_vapi_android.worker.LocalAppManager.updateOnNewTask:259 
+08-30 03:54:34.623  1458  1891 D NewFileUpdater: onOpenNewTask focusPkgName set to com.smartmore.partfinder
+08-30 03:54:34.625  1458  1891 D Watchdog: ignore events AppLaunch: {"app_name":"PartFinder","app_package":"com.smartmore.partfinder","event_duration":0,"failure_reason":"","status_code":0}
+08-30 03:54:34.635  1458  2375 D Watchdog: upload event: {"architecture":"x86_64","channel":"nochannel-mumu12","country":"zh-CN","engine":"NEMUX","fchannel":"nochannel-mumu12","language":"zh-Hans","mpid":"0","package":"mumu","product":"MuMu5.0","product_version":"5.23.0.3181","usage":"0","uuid":"fca2a6e4-149b-4627-9b56-1f31ab35d2f0","version":"5.23.0.3181","x":{"app_name":"PartFinder","app_package":"com.smartmore.partfinder","app_version_code":3,"app_version_name":"10.2.0","error":{"code":0,"msg":"ok"},"extra":{"NB":"{\"NB_64BIT\":\"true\"}","amp_name":"PartFinder","ampid":0,"is_remote_control":0},"token":"4aec0bb0-9097-4e8c-8da4-2399d660db4b"}}	type: LaunchAPP	sign: ZhuvQwRO/9Qj+lvfKJ4GmBP9y0k=	uid: 1000	json:{"app_name":"PartFinder","app_package":"com.smartmore.partfinder","app_version_code":3,"app_version_name":"10.2.0","error":{"code":0,"msg":"ok"},"extra":{"NB":"{\"NB_64BIT\":\"true\"}","amp_name":"PartFinder","ampid":0,"is_remote_control":0},"token":"4aec0bb0-9097-4e8c-8da4-2399d660db4b"}
+08-30 03:54:34.661  2047  2047 W AccMsgReceiver: AccMsgReceiver: onReceive action = com.mumu.launcher.ACTION_FOCUSED_TAB_CHANGED
+08-30 03:54:34.675  1458  2375 D Watchdog: upload server response: {"errcode": 100, "errmsg": "ok"}
+08-30 03:54:34.676  1458  2375 D Watchdog: upload result: true
+08-30 03:54:34.711  1305  4702 W ActivityManager: Foreground service started from background can not have location/camera/microphone access: service com.mumu.acc/.AccService
+08-30 03:54:34.714  1305  1335 V ActivityManager: Attempted to start a foreground service (com.mumu.acc/.AccService) with a broken notification (no icon: Notification(channel=acc-service shortcut=null contentView=null vibrate=null sound=null defaults=0x0 flags=0x40 color=0x00000000 vis=PRIVATE))
+08-30 03:54:34.717  2047  2872 W AccServiceManager: onAppLaunch: packageName = com.smartmore.partfinder
+08-30 03:54:34.815  1458  1807 W NewFileUpdater: MSG_GET_PACKAGE_TAG_INFO, no available new tag for: com.smartmore.partfinder, workingTag: 12.2351
+08-30 03:54:35.231  9277  9277 V cr_A11yState: [AccessibilityState.java:297] Enabled accessibility services: [app.lawnchair/.LawnchairAccessibilityService]
+08-30 03:54:35.231  9277  9277 V cr_A11yState: [AccessibilityState.java:298] Running accessibility services: []
+08-30 03:54:35.231  9277  9277 V cr_A11yState: [AccessibilityState.java:299] Will check again after 2000 milliseconds.
+08-30 03:54:35.273  1071  1076 I NemuSysOpt: pressure relief 6
+08-30 03:54:35.273  1071  1071 I nemu_sys_opt: type=1400 audit(0.0:10147): avc: denied { write } for name="pagecache_limit_switch" dev="proc" ino=24767 scontext=u:r:init:s0 tcontext=u:object_r:proc:s0 tclass=file permissive=1
+08-30 03:54:36.183  9379  9379 I adbd    : type=1400 audit(0.0:10148): avc: denied { search } for name="/" dev="sda6" ino=2 scontext=u:r:adbd:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+08-30 03:54:36.183  9379  9379 I adbd    : type=1400 audit(0.0:10149): avc: denied { execute } for name="sh" dev="sda6" ino=847 scontext=u:r:adbd:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+08-30 03:54:36.183  9379  9379 I adbd    : type=1400 audit(0.0:10150): avc: denied { read open } for path="/system/bin/sh" dev="sda6" ino=847 scontext=u:r:adbd:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+08-30 03:54:36.183  9379  9379 I adbd    : type=1400 audit(0.0:10151): avc: denied { execute_no_trans } for path="/system/bin/sh" dev="sda6" ino=847 scontext=u:r:adbd:s0 tcontext=u:object_r:unlabeled:s0 tclass=file permissive=1
+08-30 03:54:36.420  9384  9384 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 03:54:36.416  9384  9384 I cmd     : type=1400 audit(0.0:10158): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:adbd:s0 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1
+08-30 03:54:36.416  9384  9384 I cmd     : type=1400 audit(0.0:10159): avc: denied { call } for scontext=u:r:adbd:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+08-30 03:54:36.426  1053  1053 I servicemanager: type=1400 audit(0.0:10160): avc: denied { transfer } for scontext=u:r:init:s0 tcontext=u:r:adbd:s0 tclass=binder permissive=1
+08-30 03:54:36.426  9384  9384 I cmd     : type=1400 audit(0.0:10161): avc: denied { call } for scontext=u:r:adbd:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+08-30 03:54:36.426  9384  9384 I cmd     : type=1400 audit(0.0:10162): avc: denied { transfer } for scontext=u:r:adbd:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+08-30 03:54:36.459  1305  1348 V DisplayPowerController[0]: Brightness [0.39763778] reason changing to: 'manual', previous reason: 'manual [ dim ]'.
+08-30 03:54:36.465  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.470  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.471  1156  1464 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.474  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:36.476  1305  1335 I DropBoxManagerService: add tag=system_server_wtf isTagEnabled=true flags=0x2
+08-30 03:54:36.479  1305  1335 I DropBoxManagerService: add tag=system_server_wtf isTagEnabled=true flags=0x2
+08-30 03:54:36.479  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.479  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.479  1156  1463 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.480  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:36.480  1305  1335 I DropBoxManagerService: add tag=system_server_wtf isTagEnabled=true flags=0x2
+08-30 03:54:36.481  1305  1335 I DropBoxManagerService: add tag=system_server_wtf isTagEnabled=true flags=0x2
+08-30 03:54:36.496  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.496  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.497  1156  1463 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.497  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:36.497  1305  1335 I DropBoxManagerService: add tag=system_server_wtf isTagEnabled=true flags=0x2
+08-30 03:54:36.513  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.513  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.514  1156  1463 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.514  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:36.529  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.529  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.530  1156  1463 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.530  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:36.546  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.547  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.547  1156  1463 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.547  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:36.563  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.563  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.564  1156  1463 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.564  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:36.581  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.581  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.582  1156  1463 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.582  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:36.596  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.597  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.597  1156  1463 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.597  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:36.613  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.613  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.614  1156  1463 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.614  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:36.629  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.629  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.630  1156  1463 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.630  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:36.646  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.646  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.647  1156  1463 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.647  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:36.663  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.663  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.666  1156  1463 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.666  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:36.679  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.679  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.680  1156  1463 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.680  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:36.696  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.696  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.697  1156  1463 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.697  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:36.714  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.714  1305  1462 E DisplayDeviceConfig: requesting nits when no mapping exists.
+08-30 03:54:36.714  1156  1463 E HWComposer: operator(): operator() failed for display 4619827820427265280: Unsupported (8)
+08-30 03:54:36.714  1305  1462 E SurfaceFlinger: setDisplayBrightness: failed to transact: -38
+08-30 03:54:37.235  9277  9277 V cr_A11yState: [AccessibilityState.java:297] Enabled accessibility services: [app.lawnchair/.LawnchairAccessibilityService]
+08-30 03:54:37.235  9277  9277 V cr_A11yState: [AccessibilityState.java:298] Running accessibility services: []
+08-30 03:54:37.235  9277  9277 V cr_A11yState: [AccessibilityState.java:299] Will check again after 4000 milliseconds.
+08-30 03:54:38.485  1458  1458 D DropboxReceiver: dropbox tag: system_server_wtf
+08-30 03:54:38.485  1458  1458 D DropboxReceiver: dropbox time: 1788033276497
+08-30 03:54:38.485  1458  1458 D DropboxReceiver: dropbox file is not to be trackd
+08-30 03:54:38.943  9387  9387 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 03:54:38.943  2034  2034 I Thread-5: type=1400 audit(0.0:10167): avc: denied { use } for path="/dev/null" dev="tmpfs" ino=9109 scontext=u:r:mediaprovider_app:s0:c39,c256,c512,c768 tcontext=u:r:kernel:s0 tclass=fd permissive=1 app=com.android.providers.media.module
+08-30 03:54:38.965  2034  2163 W MediaProvider: isAppCloneUserPair failed. Users: 0 and 0
+08-30 03:54:38.965  2034  2163 W MediaProvider: isAppCloneUserPair for user 0: false
+08-30 03:54:38.959  2034  2034 I Thread-4: type=1400 audit(0.0:10168): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:mediaprovider_app:s0:c39,c256,c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1 app=com.android.providers.media.module
+08-30 03:54:38.976  9387  9387 I screencap: type=1400 audit(0.0:10169): avc: denied { transfer } for scontext=u:r:adbd:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+08-30 03:54:38.984  1156  1463 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 33181696
+08-30 03:54:38.983  1156  1156 I surfaceflinger: type=1400 audit(0.0:10170): avc: denied { call } for scontext=u:r:init:s0 tcontext=u:r:adbd:s0 tclass=binder permissive=1
+08-30 03:54:38.988  2034  2148 W StorageManager: ignore the failure of setting attributes for /storage/emulated/0/v.png
+08-30 03:54:38.989  9387  9389 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 03:54:38.989  1055  1055 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+08-30 03:54:38.989  9387  9389 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@4.0::IMapper instance: default
+08-30 03:54:38.989  1055  1055 I hwservicemanager: Since android.hardware.graphics.mapper@4.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+08-30 03:54:38.990  9387  9389 I Gralloc4: mapper 4.x is not supported
+08-30 03:54:38.986  9387  9387 I Binder:9387_1: type=1400 audit(0.0:10171): avc: denied { open } for path="/system/vendor/lib64/hw" dev="sda6" ino=4721 scontext=u:r:adbd:s0 tcontext=u:object_r:unlabeled:s0 tclass=dir permissive=1
+08-30 03:54:38.990  1055  1055 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+08-30 03:54:38.990  9387  9389 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@3.0::IMapper instance: default
+08-30 03:54:38.990  1055  1055 I hwservicemanager: Since android.hardware.graphics.mapper@3.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+08-30 03:54:38.990  9387  9389 W Gralloc3: mapper 3.x is not supported
+08-30 03:54:38.990  9387  9389 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@2.0::IMapper instance: default
+08-30 03:54:38.992  2034  2148 W StorageManager: ignore the failure of setting attributes for /storage/emulated/0/v.png
+08-30 03:54:38.998  1055  9390 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@4.0::IMapper/default": error code: 0x20
+08-30 03:54:38.998  1055  9390 I hwservicemanager: Tried to start android.hardware.graphics.mapper@4.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+08-30 03:54:39.004  1055  9391 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@3.0::IMapper/default": error code: 0x20
+08-30 03:54:39.004  1055  9391 I hwservicemanager: Tried to start android.hardware.graphics.mapper@3.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+08-30 03:54:39.007  9387  9389 D screencap: Features: 0 0 0
+08-30 03:54:39.007  9387  9389 E screencap: vulkan version is 4211029
+08-30 03:54:39.014  9387  9387 D screencap: Features: 0 0 0
+08-30 03:54:39.014  9387  9387 E screencap: vulkan version is 4211029
+08-30 03:54:39.120  2598  2612 W webview_servic: Reducing the number of considered missed Gc histogram windows from 140 to 100
+08-30 03:54:39.410  9393  9393 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 03:54:39.415  1305  1335 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/v.png flg=0x400010 } to com.android.providers.media.module/com.android.providers.media.MediaReceiver
+08-30 03:54:39.743  2034  2164 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.shell
+08-30 03:54:40.516  1052  1052 I lmkd    : type=1400 audit(0.0:10181): avc: denied { write } for name="oom_score_adj" dev="proc" ino=19530 scontext=u:r:init:s0 tcontext=u:r:permissioncontroller_app:s0:c38,c256,c512,c768 tclass=file permissive=1
+08-30 03:54:40.942  1071  1075 I NemuSysOpt: pressure unrelief
+08-30 03:54:41.238  9277  9277 V cr_A11yState: [AccessibilityState.java:297] Enabled accessibility services: [app.lawnchair/.LawnchairAccessibilityService]
+08-30 03:54:41.238  9277  9277 V cr_A11yState: [AccessibilityState.java:298] Running accessibility services: []
+08-30 03:54:41.238  9277  9277 V cr_A11yState: [AccessibilityState.java:299] Will check again after 8000 milliseconds.
+08-30 03:54:41.238  9277  9277 V cr_A11yState: [AccessibilityState.java:313] Informing listeners of changes.
+08-30 03:54:49.785  8802  8802 D CompatibilityChangeReporter: Compat change id reported: 150939131; UID 10015; state: ENABLED
+08-30 03:54:50.419  1134  1134 I Dns_102_1000: type=1400 audit(0.0:10182): avc: denied { setopt } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+08-30 03:54:50.419  1134  1134 I Dns_102_1000: type=1400 audit(0.0:10183): avc: denied { setattr } for name="UDPv6" dev="sockfs" ino=68108 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+08-30 03:54:50.419  1134  1134 I Dns_102_1000: type=1400 audit(0.0:10184): avc: denied { connect } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+08-30 03:54:50.419  1134  1134 I Dns_102_1000: type=1400 audit(0.0:10185): avc: denied { getopt } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+08-30 03:54:50.419  1134  1134 I Dns_102_1000: type=1400 audit(0.0:10186): avc: denied { bind } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+08-30 03:54:50.419  1134  1134 I Dns_102_1000: type=1400 audit(0.0:10187): avc: denied { write } for laddr=10.0.2.15 lport=54583 faddr=114.114.114.114 fport=53 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+08-30 03:54:50.456  1134  1134 I Dns_102_1000: type=1400 audit(0.0:10188): avc: denied { read } for laddr=10.0.2.15 lport=54583 faddr=114.114.114.114 fport=53 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+08-30 03:54:50.456  1134  1134 I Dns_102_1000: type=1400 audit(0.0:10189): avc: denied { getattr } for laddr=10.0.2.15 lport=57180 faddr=42.186.47.187 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=udp_socket permissive=1
+08-30 03:54:50.694  2035  2059 W ssioncontrolle: Reducing the number of considered missed Gc histogram windows from 140 to 100
+08-30 03:54:50.689  2035  2035 I HeapTaskDaemon: type=1400 audit(0.0:10190): avc: denied { sendto } for path="/dev/socket/logdw" scontext=u:r:permissioncontroller_app:s0:c38,c256,c512,c768 tcontext=u:r:init:s0 tclass=unix_dgram_socket permissive=1 app=com.android.permissioncontroller
+08-30 03:54:52.129  1134  1134 I netd    : type=1400 audit(0.0:10196): avc: denied { create } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_tcpdiag_socket permissive=1
+08-30 03:54:52.129  1134  1134 I netd    : type=1400 audit(0.0:10197): avc: denied { connect } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_tcpdiag_socket permissive=1
+08-30 03:54:52.129  1134  1134 I netd    : type=1400 audit(0.0:10198): avc: denied { write } for path="socket:[68636]" dev="sockfs" ino=68636 scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_tcpdiag_socket permissive=1
+08-30 03:54:52.129  1134  1134 I netd    : type=1400 audit(0.0:10199): avc: denied { nlmsg_read } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=netlink_tcpdiag_socket permissive=1
+08-30 03:54:57.516  1146  1146 I health@2.0-serv: type=1400 audit(0.0:10200): avc: denied { read } for name="present" dev="sysfs" ino=9144 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+08-30 03:54:57.516  1146  1146 I health@2.0-serv: type=1400 audit(0.0:10201): avc: denied { open } for path="/sys/devices/virtual/power_supply/battery/present" dev="sysfs" ino=9144 scontext=u:r:init:s0 tcontext=u:object_r:sysfs:s0 tclass=file permissive=1
+08-30 03:54:57.519  1146  1146 I health@2.0-serv: type=1400 audit(0.0:10202): avc: denied { call } for scontext=u:r:init:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+08-30 03:55:00.019  1491  1491 I ndroid.systemui: type=1400 audit(0.0:10203): avc: denied { call } for scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1 app=com.android.systemui
+08-30 03:55:00.029  1491  1491 I RenderThread: type=1400 audit(0.0:10204): avc: denied { transfer } for scontext=u:r:platform_app:s0:c512,c768 tcontext=u:r:init:s0 tclass=binder permissive=1 app=com.android.systemui
+08-30 03:55:00.229  1052  1052 I lmkd    : type=1400 audit(0.0:10205): avc: denied { write } for name="oom_score_adj" dev="proc" ino=64567 scontext=u:r:init:s0 tcontext=u:r:mediaprovider:s0:c512,c768 tclass=file permissive=1
+08-30 03:55:00.229  1052  1052 I lmkd    : type=1400 audit(0.0:10206): avc: denied { write } for name="oom_score_adj" dev="proc" ino=18420 scontext=u:r:init:s0 tcontext=u:r:priv_app:s0:c512,c768 tclass=file permissive=1
+08-30 03:55:04.178  9411  9411 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 03:55:04.176  9411  9411 I cmd     : type=1400 audit(0.0:10207): avc: denied { call } for scontext=u:r:adbd:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+08-30 03:55:04.179  9411  9411 I cmd     : type=1400 audit(0.0:10208): avc: denied { call } for scontext=u:r:adbd:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+08-30 03:55:04.183  9411  9411 I cmd     : type=1400 audit(0.0:10209): avc: denied { transfer } for scontext=u:r:adbd:s0 tcontext=u:r:system_server:s0 tclass=binder permissive=1
+08-30 03:55:04.733  1147  1147 E android.hardware.power.stats@1.0-service-mock: Failed to getEnergyData
+08-30 03:55:06.529  9415  9415 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 03:55:06.539  2034  2163 W MediaProvider: isAppCloneUserPair failed. Users: 0 and 0
+08-30 03:55:06.539  2034  2163 W MediaProvider: isAppCloneUserPair for user 0: false
+08-30 03:55:06.549  2034  2148 W StorageManager: ignore the failure of setting attributes for /storage/emulated/0/w.png
+08-30 03:55:06.550  2034  2148 W StorageManager: ignore the failure of setting attributes for /storage/emulated/0/w.png
+08-30 03:55:06.551  1156  1463 D gralloc_x86: gralloc_alloc: Creating ashmem region of size 33181696
+08-30 03:55:06.543  9415  9415 I screencap: type=1400 audit(0.0:10210): avc: denied { transfer } for scontext=u:r:adbd:s0 tcontext=u:r:init:s0 tclass=binder permissive=1
+08-30 03:55:06.557  9415  9417 D hw-ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 03:55:06.557  1055  1055 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@4.0::IMapper/default in either framework or device VINTF manifest.
+08-30 03:55:06.557  9415  9417 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@4.0::IMapper instance: default
+08-30 03:55:06.557  1055  1055 I hwservicemanager: Since android.hardware.graphics.mapper@4.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+08-30 03:55:06.557  9415  9417 I Gralloc4: mapper 4.x is not supported
+08-30 03:55:06.558  1055  1055 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device VINTF manifest.
+08-30 03:55:06.558  9415  9417 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@3.0::IMapper instance: default
+08-30 03:55:06.558  1055  1055 I hwservicemanager: Since android.hardware.graphics.mapper@3.0::IMapper/default is not registered, trying to start it as a lazy HAL.
+08-30 03:55:06.558  9415  9417 W Gralloc3: mapper 3.x is not supported
+08-30 03:55:06.559  9415  9417 E HidlServiceManagement: getService: Potential race detected, descriptor: android.hardware.graphics.mapper@2.0::IMapper instance: default
+08-30 03:55:06.553  1055  1055 I hwservicemanage: type=1400 audit(0.0:10211): avc: denied { connectto } for path="/dev/socket/property_service" scontext=u:r:init:s0 tcontext=u:r:kernel:s0 tclass=unix_stream_socket permissive=1
+08-30 03:55:06.571  1055  9418 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@4.0::IMapper/default": error code: 0x20
+08-30 03:55:06.571  1055  9418 I hwservicemanager: Tried to start android.hardware.graphics.mapper@4.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+08-30 03:55:06.559     1     1 I init    : type=1400 audit(0.0:10212): avc: denied { read } for name="cmdline" dev="proc" ino=644 scontext=u:r:kernel:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+08-30 03:55:06.579  9415  9417 D screencap: Features: 0 0 0
+08-30 03:55:06.579  9415  9417 E screencap: vulkan version is 4211029
+08-30 03:55:06.581  1055  9419 W libc    : Unable to set property "ctl.interface_start" to "android.hardware.graphics.mapper@3.0::IMapper/default": error code: 0x20
+08-30 03:55:06.581  1055  9419 I hwservicemanager: Tried to start android.hardware.graphics.mapper@3.0::IMapper/default as a lazy service, but was unable to. Usually this happens when a service is not installed, but if the service is intended to be used as a lazy service, then it may be configured incorrectly.
+08-30 03:55:06.559     1     1 I init    : type=1400 audit(0.0:10213): avc: denied { open } for path="/proc/1055/cmdline" dev="proc" ino=644 scontext=u:r:kernel:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+08-30 03:55:06.585  9415  9415 D screencap: Features: 0 0 0
+08-30 03:55:06.585  9415  9415 E screencap: vulkan version is 4211029
+08-30 03:55:06.559     1     1 I init    : type=1400 audit(0.0:10214): avc: denied { getattr } for path="/proc/1055/cmdline" dev="proc" ino=644 scontext=u:r:kernel:s0 tcontext=u:r:init:s0 tclass=file permissive=1
+08-30 03:55:07.009  9421  9421 D ProcessState: Binder ioctl to enable oneway spam detection failed: Invalid argument
+08-30 03:55:07.014  1305  1335 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.MEDIA_SCANNER_SCAN_FILE dat=file:///sdcard/w.png flg=0x400010 } to com.android.providers.media.module/com.android.providers.media.MediaReceiver
+08-30 03:55:07.326  2034  2163 I MediaProvider: Deleted 0 1 0 0 0 0 0 items on external_primary due to com.android.shell
+08-30 03:55:23.539  1134  1134 I netd    : type=1400 audit(0.0:10215): avc: denied { call } for scontext=u:r:init:s0 tcontext=u:r:network_stack:s0 tclass=binder permissive=1
+08-30 03:55:25.633  1305  4702 D WifiNl80211Manager: Scan result ready event
+08-30 03:55:25.633  1305  4702 D WifiNative: Scan result ready event
+08-30 03:55:40.289  9431  9431 I logcat  : type=1400 audit(0.0:10216): avc: denied { write } for name="logdr" dev="tmpfs" ino=11917 scontext=u:r:adbd:s0 tcontext=u:object_r:logdr_socket:s0 tclass=sock_file permissive=1

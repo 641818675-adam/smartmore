@@ -1,0 +1,47 @@
+{
+  "app_version": "10.1.0-rc2",
+  "round": 2,
+  "method": "代码走查 + 92 项离线断言；重点排查 Android 平台交互与跨页状态可发现性",
+  "items": [
+    {
+      "id": "R2-01",
+      "title": "硬件返回键不接管应用内层叠：详情页/弹层打开时按返回直接退出应用",
+      "priority": "P1",
+      "categories": ["界面", "客户"],
+      "affected_focus": ["搜索", "选型", "客户", "界面"],
+      "evidence": "MainActivity.onBackPressed() 只在 webView.canGoBack() 为真时回退（单页应用无历史，永远为假），其余情况直接 super.onBackPressed() 退出应用；JS 侧 openSheet/openModal 未向原生层上报层叠状态。Android 返回键应逐层退出：弹层 → 详情 → 应用。",
+      "fix": "原生桥接新增 reportOverlay(boolean)；JS 打开/关闭 sheet 与 modal 时上报；onBackPressed 检测到层叠打开时执行 __pf.closeTop() 而非退出。",
+      "voice": "看完型号按返回键，应用直接闪退回桌面了"
+    },
+    {
+      "id": "R2-02",
+      "title": "已选报价客户时，详情页复制整包没有任何可见提示",
+      "priority": "P1",
+      "categories": ["客户"],
+      "affected_focus": ["客户", "选型"],
+      "evidence": "app.js data-copy-set 处理器静默把 quoteHeader() 拼进复制文本；detailHTML 不显示选中客户。用户在客户页选完客户、切到选型页后完全无感知，违背设计规范 §3.9「状态必须可见」。",
+      "fix": "详情 hero 区状态徽标行追加「报价客户: X」胶囊；未选择时不显示。",
+      "voice": "选了客户以后去复制清单，根本不知道有没有带上"
+    },
+    {
+      "id": "R2-03",
+      "title": "客户导入失败只有一种报错，无法区分原因",
+      "priority": "P2",
+      "categories": ["客户"],
+      "affected_focus": ["客户"],
+      "evidence": "customer.js importJSON 对「JSON 解析失败」与「缺少 customers 数组的合法 JSON」都返回 null，runImport 统一提示『JSON 无法解析』。用户粘贴了半截 JSON 或贴错内容时得不到方向。",
+      "fix": "importJSON 失败时返回 {error:'parse'|'format'}；runImport 分别提示『无法解析，请检查是否完整』与『缺少 customers 数组，请确认导出内容』。",
+      "voice": "导入失败就一句解析不了，不知道是我贴错了还是内容不对"
+    },
+    {
+      "id": "R2-04",
+      "title": "反馈弹层未选中星标也用实心星，看起来像已选中",
+      "priority": "P3",
+      "categories": ["界面"],
+      "affected_focus": ["界面"],
+      "evidence": "app.js feedbackModal 五颗星统一用 ICONS.starOn（实心填充），仅靠灰色区分未选中，违反设计规范 §3.4「状态靠形状与颜色双重编码」。",
+      "fix": "未选中态改用描边星 ICONS.star，选中态保持实心星 + 琥珀色。",
+      "voice": "打分的时候分不清点没点上"
+    }
+  ]
+}

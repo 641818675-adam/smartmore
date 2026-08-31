@@ -1,0 +1,17 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-09-01T00:18:00.000Z",
+  "rating": 5,
+  "categories": [],
+  "message": "偶尔想翻全库看配件",
+  "app_version": "10.1.0-rc1",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 832,
+  "screen_height": 2268,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-47",
+  "finding_ids": [],
+  "evidence": "无问题命中，仅基线体验打分"
+}

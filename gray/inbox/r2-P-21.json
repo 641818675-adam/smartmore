@@ -1,0 +1,23 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-08-30T22:32:00.000Z",
+  "rating": 2,
+  "categories": [
+    "界面",
+    "客户"
+  ],
+  "message": "看完型号按返回键，应用直接闪退回桌面了；选了客户以后去复制清单，根本不知道有没有带上",
+  "app_version": "10.1.0-rc2",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1080,
+  "screen_height": 2400,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-21",
+  "finding_ids": [
+    "R2-01",
+    "R2-02"
+  ],
+  "evidence": "R2-01: MainActivity.onBackPressed() 只在 webView.canGoBack() 为真时回退（单页应用无历史，永远为假），其余情况直接 super.onBackPressed() 退出应用；JS 侧 openSheet/openModal 未向原生层上报层叠状态。Android 返回键应逐层退出：弹层 → 详情 → 应用。 | R2-02: app.js data-copy-set 处理器静默把 quoteHeader() 拼进复制文本；detailHTML 不显示选中客户。用户在客户页选完客户、切到选型页后完全无感知，违背设计规范 §3.9「状态必须可见」。"
+}

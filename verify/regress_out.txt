@@ -1,0 +1,34 @@
+== 安装 APK ==
+Performing Streamed Install
+Success
+== 冷启动计时（logcat Displayed，非阻塞） ==
+  第 1 次: 711ms
+  第 2 次: 910ms
+  第 3 次: 600ms
+== 开始采集 logcat ==
+== [1] 展开态 2160x3840 @540dpi (640dp) ==
+  -> r01_home.png
+== [2] 输入完整型号（自动聚焦，无需点击） ==
+  -> r02_search.png
+== [3] 清空后输入不存在的型号（空状态分因文案） ==
+  -> r03_empty.png
+== [4] 输入无套包规则的 VN4000（套包告警） ==
+  -> r04_vn4000.png
+== [5] FOLD3 外屏 832x2268 @402dpi（原列表区黑屏缺陷场景） ==
+  -> r05_cover.png
+== [6] 外屏下搜索（窄屏列表渲染） ==
+  -> r06_cover_search.png
+== [7] FOLD3 内屏 1768x2208 @420dpi ==
+  -> r07_inner.png
+== 导出 logcat ==
+  -> 3326 行
+
+== 稳定性统计 ==
+  FATAL EXCEPTION : 0
+  ANR in          : 0
+  am_crash        : 0
+  am_anr          : 0
+  控制台 JS 错误  : 0
+
+== 完成 ==
+DONE exit=0

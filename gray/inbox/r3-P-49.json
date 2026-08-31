@@ -1,0 +1,19 @@
+{
+  "type": "partfinder-feedback",
+  "submitted_at": "2026-09-01T02:20:00.000Z",
+  "rating": 3,
+  "categories": [
+    "竞品"
+  ],
+  "message": "搜型号挺快",
+  "app_version": "10.1.0-rc3",
+  "data_version": "9.7.0",
+  "data_count": 1213,
+  "screen_width": 1080,
+  "screen_height": 2400,
+  "dark_mode": false,
+  "simulated": true,
+  "panelist": "P-49",
+  "finding_ids": [],
+  "evidence": "无问题命中，仅基线体验打分"
+}
