@@ -62,13 +62,18 @@ function dispatch(type, event) {
  * closest(sel) 只在目标确实携带该属性时返回元素，语义与真实 DOM 一致，
  * 因此可以用来验证路由表的优先级（例如客户卡按钮必须先于通用 .card）。
  */
-function targetWith(attrs) {
+function targetWith(attrs, ancestors) {
+  const anc = ancestors || {};
   return {
     closest(sel) {
       const hit = String(sel).split(',').some((s) => {
         s = s.trim();
-        if (s.startsWith('[') && s.endsWith(']')) {
-          return Object.prototype.hasOwnProperty.call(attrs, s.slice(1, -1));
+        const m = s.match(/^\[([^\]=]+)\](?::not\(([\w-]+)\))?$/);
+        if (m) {
+          if (Object.prototype.hasOwnProperty.call(attrs, m[1])) return true;
+          // 祖先（典型即 <body>）带该属性时，真实 closest() 会命中；
+          // 选择器写了 :not(body) 才表示「这是 CSS 状态钩子，不是动作目标」。
+          return Object.prototype.hasOwnProperty.call(anc, m[1]) && m[2] !== 'body';
         }
         if (s.startsWith('.')) {
           return attrs._class && attrs._class.split(/\s+/).includes(s.slice(1));
@@ -76,8 +81,10 @@ function targetWith(attrs) {
         return false;
       });
       if (!hit) return null;
+      const onAnc = (name) => Object.prototype.hasOwnProperty.call(anc, name) &&
+        !Object.prototype.hasOwnProperty.call(attrs, name);
       return {
-        getAttribute(name) { return Object.prototype.hasOwnProperty.call(attrs, name) ? attrs[name] : null; },
+        getAttribute(name) { return onAnc(name) ? anc[name] : (Object.prototype.hasOwnProperty.call(attrs, name) ? attrs[name] : null); },
         classList: { add() {}, remove() {}, toggle() {}, contains() { return false; } },
         click() {},
         innerHTML: '',
@@ -88,8 +95,8 @@ function targetWith(attrs) {
   };
 }
 
-function clickWith(attrs) {
-  dispatch('click', { target: targetWith(attrs) });
+function clickWith(attrs, ancestors) {
+  dispatch('click', { target: targetWith(attrs, ancestors) });
 }
 
 class MockXHR {
