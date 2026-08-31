@@ -653,8 +653,12 @@
       }
     }],
 
-    /* ---- 页签切换（必须在具体操作和 .card 之后，否则 <body data-tab> 会拦截所有点击） ---- */
-    ['[data-tab]', function (el) { switchTab(el.getAttribute('data-tab')); }],
+    /* ---- 页签切换（必须在具体操作和 .card 之后，否则 <body data-tab> 会拦截所有点击） ----
+       :not(body) 是必需的：body 上的 data-tab 只服务大屏画布模式 CSS（见 switchTab），
+       而 closest() 会一路向上走到 <body>。少了这个排除，任何没有专属路由的点击
+       （客户表单输入框、列表空白处）都会被当成一次切页，整栏 DOM 重建、
+       selected/query 被清空——表现就是"按钮点不动、客户信息打不进去"。 */
+    ['[data-tab]:not(body)', function (el) { switchTab(el.getAttribute('data-tab')); }],
   ];
 
   var searchTimer = null;

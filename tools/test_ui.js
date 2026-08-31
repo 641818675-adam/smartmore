@@ -495,9 +495,21 @@ setTimeout(() => {
   app.switchTab('customers');
   document.getElementById('cust-name').value = '回车新增客户';
   document.getElementById('cust-addr').value = '';
-  const entered = app.handleCustEnter({ target: { id: 'cust-name' }, preventDefault() {} });
+  const entered = app.handleCustEnter({ key: 'Enter', target: { id: 'cust-name' }, preventDefault() {} });
   check('R3-03 回车触发保存', entered === true && C.all().some((c) => c.name === '回车新增客户'));
-  check('R3-03 非表单输入不拦截', app.handleCustEnter({ target: { id: 'q' } }) === false);
+  check('R3-03 非表单输入不拦截', app.handleCustEnter({ key: 'Enter', target: { id: 'q' } }) === false);
+
+  // 回归（真机缺陷）：handleEnter 一度完全不判断按键 —— 客户名/地址框里的每一次
+  // keydown 都被 preventDefault() 并触发保存。后果不是"少个快捷提交"，而是
+  // 键盘一个字也打不进去（连 Backspace 都被吞），且每敲一键就多存一条客户。
+  let prevented = 0;
+  const custBefore = C.all().length;
+  const typedA = app.handleCustEnter({ key: 'a', target: { id: 'cust-name' }, preventDefault() { prevented++; } });
+  const typedDel = app.handleCustEnter({ key: 'Backspace', target: { id: 'cust-addr' }, preventDefault() { prevented++; } });
+  check('普通按键不得被拦截（客户信息才能录入）',
+    typedA === false && typedDel === false && prevented === 0,
+    `a=${typedA} Backspace=${typedDel} prevented=${prevented}`);
+  check('普通按键不得触发保存', C.all().length === custBefore, `${custBefore} -> ${C.all().length}`);
 
   // ---- 需求1：详情页首屏料号速览 + 规格折叠下移 ----
   app.switchTab('search');
@@ -628,6 +640,17 @@ setTimeout(() => {
   // data-tab → 切页
   clickWith({ 'data-tab': 'saved' });
   check('路由 data-tab 切页', app.state.tab === 'saved', `tab=${app.state.tab}`);
+
+  // 回归（真机缺陷）：<body data-tab> 只是大屏画布模式的 CSS 状态钩子，不是动作目标。
+  // 真实 closest() 会一路走到 <body>，于是任何没有专属路由的点击（客户表单输入框、
+  // 列表空白处）都被当成一次"切页"，整栏 DOM 重建 → 输入框刚聚焦就被销毁，字打不进去。
+  app.switchTab('search');
+  app.state.selected = app.state.catalog.materials.find((m) => m.is_accessory === 0);
+  app.state.shown = 60;
+  clickWith({ id: 'cust-name' }, { 'data-tab': 'search' });
+  check('body[data-tab] 不被路由当成页签按钮（普通点击必须保持惰性）',
+    app.state.selected !== null && app.state.shown === 60,
+    `selected=${app.state.selected ? '保留' : '被清空'} shown=${app.state.shown}`);
 
   // data-more → 加载更多步进
   app.switchTab('search');

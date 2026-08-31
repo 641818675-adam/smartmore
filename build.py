@@ -36,8 +36,8 @@ APKSIGNER_JAR = BUILD_TOOLS / "lib" / "apksigner.jar"
 ANDROID_JAR = PLATFORM / "android.jar"
 
 PACKAGE = "com.smartmore.partfinder"
-VERSION_NAME = "10.8.0"
-VERSION_CODE = "11"
+VERSION_NAME = "10.8.1"
+VERSION_CODE = "12"
 MIN_SDK = "26"
 TARGET_SDK = "34"
 

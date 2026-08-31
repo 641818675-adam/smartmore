@@ -114,9 +114,14 @@
     return true;
   }
 
-  /** R3-03：客户表单里按输入法「完成/回车」直接提交，不再要求去点保存按钮。 */
+  /** R3-03：客户表单里按输入法「完成/回车」直接提交，不再要求去点保存按钮。
+   *  必须逐层收窄到"确实是回车提交"：早先版本漏掉了按键判断，
+   *  结果框里每敲一键都被 preventDefault（一个字也打不进去）并触发一次保存。 */
   function handleEnter(e) {
     if (!e || !e.target) return false;
+    if (e.key !== 'Enter' && e.keyCode !== 13) return false;
+    // 输入法候选尚未上屏时的回车属于"确认候选词"，不能当成提交
+    if (e.isComposing) return false;
     var id = e.target.id;
     if (id !== 'cust-name' && id !== 'cust-addr') return false;
     if (e.preventDefault) e.preventDefault();
