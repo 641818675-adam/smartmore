@@ -20,7 +20,7 @@
   var SEARCH_CAP = 600;
 
   // 与 build.py 的 VERSION_NAME 保持同步（此前两处漂移为 10.3.0 / 10.4.1）
-  var APP_VERSION = '10.8.0';
+  var APP_VERSION = '10.9.0';
 
   var state = {
     catalog: null,

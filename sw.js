@@ -10,7 +10,7 @@
 
   CACHE 名与 js/core/store.js 的 APP_VERSION、build.py 的 VERSION_NAME 保持同步。
 */
-var CACHE = 'pf-v10.8.0';
+var CACHE = 'pf-v10.9.0';
 
 var ASSETS = [
   './',

@@ -386,13 +386,13 @@
 
   /**
    * data-* 契约 → 动作。
-   * 数组顺序即分派优先级，与原实现的 if 链逐条对齐，不得随意调换：
-   * 客户卡片上的操作按钮（data-cust-*）必须先于通用 .card 命中，
-   * 否则点击"复制/编辑/删除"会被卡片选中动作吞掉。
+   * 数组顺序即分派优先级：
+   *   1. 具体操作路由优先（客户/收藏/复制/反馈/备份等），
+   *      否则 <body data-tab="..."> 会被 [data-tab] 先命中并吞掉所有点击。
+   *   2. [data-tab] 放在具体操作之后，确保页签按钮仍然能切换。
+   *   3. .card 兜底，仅在无更具体匹配时触发卡片选中。
    */
   var ROUTES = [
-    ['[data-tab]', function (el) { switchTab(el.getAttribute('data-tab')); }],
-
     ['[data-act]', function (el) {
       var st = state();
       var act = el.getAttribute('data-act');
@@ -636,7 +636,7 @@
     ['[data-bk-copy]', function () { backupCopy(); }],
     ['[data-bk-restore]', function () { backupRestore(); }],
 
-    /* ---- 兜底：通用物料卡片（必须最后，否则会抢走卡片内按钮的点击） ---- */
+    /* ---- 兜底：通用物料卡片（必须在 [data-tab] 之前，否则 <body data-tab> 会拦截所有点击） ---- */
     ['.card', function (el) {
       var st = state();
       var m = Store.byNo(el.getAttribute('data-no'));
@@ -652,6 +652,13 @@
         openSheet(m);
       }
     }],
+
+    /* ---- 页签切换（必须在具体操作和 .card 之后，否则 <body data-tab> 会拦截所有点击） ----
+       :not(body) 是必需的：body 上的 data-tab 只服务大屏画布模式 CSS（见 switchTab），
+       而 closest() 会一路向上走到 <body>。少了这个排除，任何没有专属路由的点击
+       （客户表单输入框、列表空白处）都会被当成一次切页，整栏 DOM 重建、
+       selected/query 被清空——表现就是"按钮点不动、客户信息打不进去"。 */
+    ['[data-tab]:not(body)', function (el) { switchTab(el.getAttribute('data-tab')); }],
   ];
 
   var searchTimer = null;
